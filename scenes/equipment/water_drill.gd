@@ -15,4 +15,3 @@ func _ready() -> void:
 
 func _on_timer_timeout() -> void:
 	var water = Water.new(RATE, map_coords)
-	print("water created: ", water.travelled)

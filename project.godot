@@ -11,8 +11,20 @@ config_version=5
 [application]
 
 config/name="worldwarw_gitlab"
+run/main_scene="res://scenes/menu/menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+InputManager="*res://plugins/GDTIM/InputManager.gd"
+Global="*res://scenes/Global.gd"
+
+[global_group]
+
+PipeLayer=""
+tilemap=""
+BuildingLayer=""
 
 [rendering]
 
