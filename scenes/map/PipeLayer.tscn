@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bx8afk3vnki0n"]
 
 [ext_resource type="Texture2D" uid="uid://bos58vrwk01an" path="res://assets/equipment/pipes_final_sprite.png" id="1_medaq"]
-[ext_resource type="Script" path="res://scenes/map/buildings.gd" id="2_nl5os"]
+[ext_resource type="Script" path="res://scenes/map/PipeLayer.gd" id="2_nl5os"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5xnrd"]
 texture = ExtResource("1_medaq")
@@ -29,12 +29,13 @@ tile_offset_axis = 1
 tile_size = Vector2i(64, 32)
 sources/2 = SubResource("TileSetAtlasSource_5xnrd")
 
-[node name="BuildingsLayer" type="TileMapLayer" groups=["buildings_layer"]]
+[node name="PipeLayer" type="TileMapLayer" groups=["buildings_layer"]]
 tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 2, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 13, 0, 0, 0, 0, 0, 0, 0, 255, 255, 2, 0, 15, 0, 0, 0, 0, 0, 255, 255, 255, 255, 2, 0, 12, 0, 0, 0, 0, 0, 255, 255, 254, 255, 2, 0, 5, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_rv45c")
 script = ExtResource("2_nl5os")
 
 [node name="WaterTimer" type="Timer" parent="."]
 wait_time = 0.2
+autostart = true
 
 [connection signal="timeout" from="WaterTimer" to="." method="_on_water_timer_timeout"]
