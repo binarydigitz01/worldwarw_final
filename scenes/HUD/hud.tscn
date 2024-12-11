@@ -89,6 +89,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="CanvasLayer/TextureProgressBar"]
+layout_mode = 0
 offset_left = 423.0
 offset_top = -8.99998
 offset_right = 483.0
