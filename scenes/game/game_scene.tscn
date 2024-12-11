@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cblngm51faq24"]
+[gd_scene load_steps=8 format=4 uid="uid://cblngm51faq24"]
 
 [ext_resource type="PackedScene" uid="uid://d3yk6jk7yc8qy" path="res://plugins/gesture_camera/GCC2D.tscn" id="1_5l45t"]
 [ext_resource type="PackedScene" uid="uid://g8bfiaqjj4u2" path="res://scenes/map/ProcederalMap.tscn" id="1_ibhwn"]
@@ -6,22 +6,26 @@
 [ext_resource type="PackedScene" uid="uid://pggmy2xqcf5i" path="res://scenes/map/BuildingLayer.tscn" id="3_31ed8"]
 [ext_resource type="PackedScene" uid="uid://w5mjfqkbcxt8" path="res://scenes/character/civilian.tscn" id="5_c41sx"]
 [ext_resource type="PackedScene" uid="uid://cgh3eha8epn43" path="res://scenes/character/builder.tscn" id="6_6bcfd"]
+[ext_resource type="PackedScene" uid="uid://xcm6xugaajk6" path="res://scenes/HUD/hud.tscn" id="7_l6ldm"]
 
 [node name="GameScene" type="Node2D"]
 
 [node name="GroundLayer" parent="." instance=ExtResource("1_ibhwn")]
 
 [node name="PipeLayer" parent="." instance=ExtResource("2_qktpy")]
-tile_map_data = PackedByteArray()
+z_as_relative = false
+tile_map_data = PackedByteArray("AAD//wAAAgAOAAAAAAAAAAAAAgANAAAAAAAAAP//AgAPAAAAAAD/////AgAMAAAAAAD///7/AgACAAAAAAAAAAMAAgAAAAAAAAD///3/AgAPAAAAAAD+//3/AgAIAAAAAAD9//3/AgAOAAAAAAD9//7/AgACAAAAAAD9////AgACAAAAAAD9/wAAAgAMAAAAAAD+/wAAAgAPAAAAAAD+/wEAAgAMAAAAAAD//wEAAgANAAAAAAA=")
 
 [node name="BuildingLayer" parent="." instance=ExtResource("3_31ed8")]
-tile_map_data = PackedByteArray(0, 0, 250, 255, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 253, 255, 252, 255, 1, 0, 0, 0, 0, 0, 0, 0)
+tile_map_data = PackedByteArray("AAD6////AAAAAAAAAAD9//z/AQAAAAAAAAA=")
 
 [node name="GCC2D" parent="." instance=ExtResource("1_5l45t")]
 
 [node name="Civilian" parent="." instance=ExtResource("5_c41sx")]
 z_index = 2
-position = Vector2(-325, -41)
+position = Vector2(23, 32)
 
 [node name="Builder" parent="." instance=ExtResource("6_6bcfd")]
 position = Vector2(479, 74)
+
+[node name="HUD" parent="." instance=ExtResource("7_l6ldm")]
