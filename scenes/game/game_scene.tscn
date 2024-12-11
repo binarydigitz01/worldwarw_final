@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cblngm51faq24"]
+
+[ext_resource type="PackedScene" uid="uid://d3yk6jk7yc8qy" path="res://plugins/gesture_camera/GCC2D.tscn" id="1_5l45t"]
+[ext_resource type="PackedScene" uid="uid://g8bfiaqjj4u2" path="res://scenes/map/ProcederalMap.tscn" id="1_ibhwn"]
+[ext_resource type="PackedScene" uid="uid://bx8afk3vnki0n" path="res://scenes/map/Buildings.tscn" id="2_qktpy"]
+[ext_resource type="PackedScene" uid="uid://dqr4qnokonuh7" path="res://scenes/Equipment/WaterDrill.tscn" id="3_jum0b"]
+
+[node name="GameScene" type="Node2D"]
+
+[node name="GroundLayer" parent="." instance=ExtResource("1_ibhwn")]
+
+[node name="BuildingsLayer" parent="." instance=ExtResource("2_qktpy")]
+position = Vector2(-62.9825, -61.4784)
+
+[node name="GCC2D" parent="." instance=ExtResource("1_5l45t")]
+
+[node name="WaterDrill" parent="." instance=ExtResource("3_jum0b")]
+position = Vector2(2, -1)
