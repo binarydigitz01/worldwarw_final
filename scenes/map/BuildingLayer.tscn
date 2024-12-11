@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://pggmy2xqcf5i"]
+[gd_scene load_steps=13 format=3 uid="uid://pggmy2xqcf5i"]
 
 [ext_resource type="Texture2D" uid="uid://csyqkne5afvuy" path="res://assets/equipment/waterdrill_sprite.png" id="1_adi78"]
 [ext_resource type="Texture2D" uid="uid://cupypbgak0wg1" path="res://assets/equipment/waterpump_sprite.png" id="2_2085o"]
+[ext_resource type="Texture2D" uid="uid://dchhk3wpea411" path="res://assets/buildings/workshop.png" id="2_ipitc"]
 [ext_resource type="Texture2D" uid="uid://ff5ivocpry3v" path="res://assets/equipment/icedrill_sprite.png" id="3_7ox3q"]
 [ext_resource type="Script" path="res://scenes/map/building_layer.gd" id="4_x70nq"]
+[ext_resource type="Texture2D" uid="uid://bbw0vsxifqql" path="res://assets/equipment/watertank_sprite.png" id="5_i0d4k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vbgjg"]
 texture = ExtResource("1_adi78")
@@ -13,6 +15,14 @@ texture_region_size = Vector2i(64, 32)
 0:0/animation_frame_1/duration = 0.2
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8.875, -11.125, -8.875, 9.125, 7.375, 9.375, 7.375, -11.125)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_svysn"]
+texture = ExtResource("2_ipitc")
+texture_region_size = Vector2i(64, 64)
+0:0/animation_columns = 2
+0:0/animation_frame_0/duration = 0.2
+0:0/animation_frame_1/duration = 0.2
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v0ul5"]
 texture = ExtResource("2_2085o")
@@ -42,6 +52,14 @@ texture_region_size = Vector2i(64, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.5, -12.5, -11.25, 9.5, 9, 8.75, 6.25, -14)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ysojt"]
+texture = ExtResource("5_i0d4k")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_vy1fe"]
 tile_shape = 3
 tile_layout = 5
@@ -51,9 +69,11 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_vbgjg")
 sources/2 = SubResource("TileSetAtlasSource_v0ul5")
 sources/3 = SubResource("TileSetAtlasSource_n5el0")
+sources/1 = SubResource("TileSetAtlasSource_svysn")
+sources/4 = SubResource("TileSetAtlasSource_ysojt")
 
-[node name="BuildingLayer" type="TileMapLayer"]
-tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0)
+[node name="BuildingLayer" type="TileMapLayer" groups=["BuildingLayer"]]
+tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_vy1fe")
 script = ExtResource("4_x70nq")
 

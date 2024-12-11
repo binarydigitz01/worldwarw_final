@@ -29,7 +29,7 @@ tile_offset_axis = 1
 tile_size = Vector2i(64, 32)
 sources/2 = SubResource("TileSetAtlasSource_5xnrd")
 
-[node name="PipeLayer" type="TileMapLayer" groups=["buildings_layer"]]
+[node name="PipeLayer" type="TileMapLayer" groups=["PipeLayer"]]
 tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 2, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 13, 0, 0, 0, 0, 0, 0, 0, 255, 255, 2, 0, 15, 0, 0, 0, 0, 0, 255, 255, 255, 255, 2, 0, 12, 0, 0, 0, 0, 0, 255, 255, 254, 255, 2, 0, 5, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_rv45c")
 script = ExtResource("2_nl5os")

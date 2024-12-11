@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dely6j1c11g7m" path="res://assets/character/civilian_sprite.png" id="2_otpy2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3dr61"]
-size = Vector2(32, 19)
+size = Vector2(11, 19)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c1xnl"]
 atlas = ExtResource("2_otpy2")
@@ -44,7 +44,7 @@ animations = [{
 script = ExtResource("1_ydps8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
+position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_3dr61")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
