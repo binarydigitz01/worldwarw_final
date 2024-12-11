@@ -1,12 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://cblngm51faq24"]
+[gd_scene load_steps=7 format=3 uid="uid://cblngm51faq24"]
 
 [ext_resource type="PackedScene" uid="uid://d3yk6jk7yc8qy" path="res://plugins/gesture_camera/GCC2D.tscn" id="1_5l45t"]
 [ext_resource type="PackedScene" uid="uid://g8bfiaqjj4u2" path="res://scenes/map/ProcederalMap.tscn" id="1_ibhwn"]
 [ext_resource type="PackedScene" uid="uid://bx8afk3vnki0n" path="res://scenes/map/PipeLayer.tscn" id="2_qktpy"]
 [ext_resource type="PackedScene" uid="uid://pggmy2xqcf5i" path="res://scenes/map/BuildingLayer.tscn" id="3_31ed8"]
 [ext_resource type="PackedScene" uid="uid://w5mjfqkbcxt8" path="res://scenes/character/civilian.tscn" id="5_c41sx"]
+[ext_resource type="PackedScene" uid="uid://xcm6xugaajk6" path="res://scenes/HUD/hud.tscn" id="6_fvl8r"]
 
 [node name="GameScene" type="Node2D"]
+position = Vector2(576, 324)
 
 [node name="GroundLayer" parent="." instance=ExtResource("1_ibhwn")]
 
@@ -19,3 +21,5 @@
 [node name="Civilian" parent="." instance=ExtResource("5_c41sx")]
 z_index = 2
 position = Vector2(-325, -41)
+
+[node name="HUD" parent="." instance=ExtResource("6_fvl8r")]
