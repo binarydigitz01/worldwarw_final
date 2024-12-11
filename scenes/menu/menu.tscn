@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://be6ortnjkkog4"]
+[gd_scene load_steps=10 format=3 uid="uid://be6ortnjkkog4"]
 
+[ext_resource type="Script" path="res://scenes/menu/menu.gd" id="1_ktw8b"]
 [ext_resource type="FontFile" uid="uid://b2sqmunikjnkm" path="res://assets/fonts/dogicapixel.ttf" id="2_yxywy"]
 [ext_resource type="FontFile" uid="uid://jbwwawwo4t4x" path="res://assets/fonts/dogicapixelbold.ttf" id="3_0q355"]
 [ext_resource type="Texture2D" uid="uid://1eeygr5f1wkd" path="res://assets/pictures/SIH_logo_2024_horizontal.png" id="3_cp28u"]
@@ -41,6 +42,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ktw8b")
 
 [node name="ZZ" type="Panel" parent="."]
 layout_mode = 1
