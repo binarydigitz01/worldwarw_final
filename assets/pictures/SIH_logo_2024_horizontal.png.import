@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c62u5xhd6ubt2"
-path="res://.godot/imported/bg_menu.jpg-fed8bb16185103f141bf1c91e59bd300.ctex"
+uid="uid://1eeygr5f1wkd"
+path="res://.godot/imported/SIH_logo_2024_horizontal.png-42641c534585119554e5f265f21e6721.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/bg_menu.jpg"
-dest_files=["res://.godot/imported/bg_menu.jpg-fed8bb16185103f141bf1c91e59bd300.ctex"]
+source_file="res://assets/pictures/SIH_logo_2024_horizontal.png"
+dest_files=["res://.godot/imported/SIH_logo_2024_horizontal.png-42641c534585119554e5f265f21e6721.ctex"]
 
 [params]
 
