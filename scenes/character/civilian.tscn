@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://w5mjfqkbcxt8"]
+
+[ext_resource type="Script" path="res://scenes/character/civilian.gd" id="1_ydps8"]
+[ext_resource type="Texture2D" uid="uid://dely6j1c11g7m" path="res://assets/character/civilian_sprite.png" id="2_otpy2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dr61"]
+size = Vector2(32, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1xnl"]
+atlas = ExtResource("2_otpy2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gmss"]
+atlas = ExtResource("2_otpy2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rki0x"]
+atlas = ExtResource("2_otpy2")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rqx5g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1xnl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gmss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rki0x")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Civilian" type="CharacterBody2D"]
+script = ExtResource("1_ydps8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3dr61")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rqx5g")
+animation = &"walk"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
