@@ -1,0 +1,139 @@
+[gd_scene load_steps=9 format=3 uid="uid://be6ortnjkkog4"]
+
+[ext_resource type="FontFile" uid="uid://b2sqmunikjnkm" path="res://assets/fonts/dogicapixel.ttf" id="2_yxywy"]
+[ext_resource type="FontFile" uid="uid://jbwwawwo4t4x" path="res://assets/fonts/dogicapixelbold.ttf" id="3_0q355"]
+[ext_resource type="Texture2D" uid="uid://1eeygr5f1wkd" path="res://assets/pictures/SIH_logo_2024_horizontal.png" id="3_cp28u"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ifkd5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ecy4x"]
+texture = SubResource("CanvasTexture_ifkd5")
+modulate_color = Color(0.615925, 0.82342, 0.884414, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vu1bs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wv4mp"]
+bg_color = Color(0.720467, 0.720468, 0.720467, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 6
+shadow_color = Color(0.214103, 0.214103, 0.214103, 0.6)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p6k6c"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 6
+shadow_color = Color(0.214103, 0.214103, 0.214103, 0.6)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ZZ" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ecy4x")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.5
+offset_top = -64.0
+offset_right = 149.5
+offset_bottom = 172.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_yxywy")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vu1bs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wv4mp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p6k6c")
+theme_override_styles/normal = SubResource("StyleBoxFlat_p6k6c")
+text = "PLAY"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_yxywy")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vu1bs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wv4mp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p6k6c")
+theme_override_styles/normal = SubResource("StyleBoxFlat_p6k6c")
+text = "INSTRUCTIONS"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_yxywy")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vu1bs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wv4mp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p6k6c")
+theme_override_styles/normal = SubResource("StyleBoxFlat_p6k6c")
+text = "EXIT"
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -269.0
+offset_top = 160.0
+offset_right = 269.0
+offset_bottom = 229.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.0807833, 0.0807833, 0.0807833, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/font = ExtResource("3_0q355")
+theme_override_font_sizes/font_size = 50
+text = "WORLD WAR W"
+
+[node name="SihLogo2024Horizontal" type="Sprite2D" parent="."]
+position = Vector2(1051, 51)
+scale = Vector2(0.0254461, 0.0254461)
+texture = ExtResource("3_cp28u")
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_instructions_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
