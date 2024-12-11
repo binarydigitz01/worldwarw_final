@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l34r3cmyokbk"
-path="res://.godot/imported/lab.png-00125318911a65980002d32aaf754dad.ctex"
+uid="uid://0672vunypt36"
+path="res://.godot/imported/waterharvester.png-4f8e97d540325e44bab4aaadaf98017e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/buildings/lab.png"
-dest_files=["res://.godot/imported/lab.png-00125318911a65980002d32aaf754dad.ctex"]
+source_file="res://assets/buildings/waterharvester.png"
+dest_files=["res://.godot/imported/waterharvester.png-4f8e97d540325e44bab4aaadaf98017e.ctex"]
 
 [params]
 
