@@ -132,9 +132,10 @@ theme_override_font_sizes/font_size = 50
 text = "WORLD WAR W"
 
 [node name="SihLogo2024Horizontal" type="Sprite2D" parent="."]
-position = Vector2(1051, 51)
+position = Vector2(39.0001, 278)
 scale = Vector2(0.0254461, 0.0254461)
 texture = ExtResource("3_cp28u")
+offset = Vector2(39770.3, -8920.82)
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_instructions_pressed"]
