@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://xcm6xugaajk6"]
+[gd_scene load_steps=8 format=3 uid="uid://xcm6xugaajk6"]
 
 [ext_resource type="Texture2D" uid="uid://cg0cndhf4e3gc" path="res://assets/pictures/icons/icon_pollution.png" id="1_of4q0"]
 [ext_resource type="Texture2D" uid="uid://b1lcj17qudw40" path="res://assets/pictures/icons/icon_water_drop.png" id="1_umeog"]
 [ext_resource type="FontFile" uid="uid://b2sqmunikjnkm" path="res://assets/fonts/dogicapixel.ttf" id="2_m4ayd"]
 [ext_resource type="Texture2D" uid="uid://dccowcvfrpbhs" path="res://assets/pictures/icons/water-level-bar/back.png" id="4_njau5"]
 [ext_resource type="Texture2D" uid="uid://c4ditm35oagev" path="res://assets/pictures/icons/water-level-bar/front.png" id="5_rjsmn"]
+[ext_resource type="Texture2D" uid="uid://cj33e5061rs3i" path="res://assets/pictures/icons/settings.png" id="6_1p7jq"]
+[ext_resource type="Texture2D" uid="uid://cm0gmvccblsmo" path="res://assets/pictures/icons/settings-pressed.png" id="7_hk8vn"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -17,9 +19,9 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 physics_interpolation_mode = 0
-offset_left = 194.0
+offset_left = 898.0
 offset_top = 32.0
-offset_right = 224.0
+offset_right = 928.0
 offset_bottom = 62.0
 size_flags_horizontal = 3
 texture = ExtResource("1_of4q0")
@@ -27,9 +29,9 @@ expand_mode = 2
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
 physics_interpolation_mode = 0
-offset_left = 228.0
+offset_left = 932.0
 offset_top = 37.0
-offset_right = 311.0
+offset_right = 1015.0
 offset_bottom = 57.0
 size_flags_horizontal = 3
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -41,9 +43,9 @@ text = "100%"
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
 physics_interpolation_mode = 0
-offset_left = 35.0
+offset_left = 739.0
 offset_top = 32.0
-offset_right = 65.0
+offset_right = 769.0
 offset_bottom = 62.0
 size_flags_horizontal = 3
 texture = ExtResource("1_umeog")
@@ -51,9 +53,9 @@ expand_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 physics_interpolation_mode = 0
-offset_left = 69.0
+offset_left = 773.0
 offset_top = 37.0
-offset_right = 146.0
+offset_right = 850.0
 offset_bottom = 57.0
 size_flags_horizontal = 3
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -89,6 +91,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="CanvasLayer/TextureProgressBar"]
+layout_mode = 0
 offset_left = 423.0
 offset_top = -8.99998
 offset_right = 483.0
@@ -100,3 +103,12 @@ theme_override_font_sizes/font_size = 15
 text = "100%"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 1065.0
+offset_top = 15.0
+offset_right = 1137.0
+offset_bottom = 87.0
+texture_normal = ExtResource("6_1p7jq")
+texture_pressed = ExtResource("7_hk8vn")
+stretch_mode = 5
