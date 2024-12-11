@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3yk6jk7yc8qy"]
+
+[ext_resource type="Script" path="res://plugins/gesture_camera/GCC2D.gd" id="1"]
+
+[node name="GCC2D" type="Camera2D"]
+script = ExtResource("1")
