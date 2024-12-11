@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dqr4qnokonuh7"]
 
 [ext_resource type="Script" path="res://scenes/equipment/water_drill.gd" id="1_bqcmb"]
-[ext_resource type="Texture2D" uid="uid://b8ves7h5cir0x" path="res://assets/equipment/waterdrill_sprite.png" id="2_k0wq6"]
+[ext_resource type="Texture2D" uid="uid://csyqkne5afvuy" path="res://assets/equipment/waterdrill_sprite.png" id="2_k0wq6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_csmje"]
 

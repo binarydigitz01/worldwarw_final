@@ -8,6 +8,8 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	agent.target_position = get_global_mouse_position()
 	var dir = to_local(agent.get_next_path_position()).normalized()
-	velocity = dir*SPEED
+	var new_velocity = dir*SPEED
+	agent.set_velocity_forced(new_velocity)
+	velocity = new_velocity
 	move_and_slide()
 	
