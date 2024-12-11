@@ -14,6 +14,17 @@ config/name="worldwarw_gitlab"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+InputManager="*res://plugins/GDTIM/InputManager.gd"
+Global="*res://scenes/Global.gd"
+
+[global_group]
+
+buildings_layer=""
+tilemap=""
+water=""
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
