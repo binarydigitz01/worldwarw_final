@@ -78,7 +78,6 @@ tile_set = SubResource("TileSet_vy1fe")
 script = ExtResource("4_x70nq")
 
 [node name="drill_timer" type="Timer" parent="."]
-wait_time = 0.2
 autostart = true
 
 [connection signal="timeout" from="drill_timer" to="." method="_on_drill_timer_timeout"]

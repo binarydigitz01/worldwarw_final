@@ -12,8 +12,10 @@
 [node name="GroundLayer" parent="." instance=ExtResource("1_ibhwn")]
 
 [node name="PipeLayer" parent="." instance=ExtResource("2_qktpy")]
+tile_map_data = PackedByteArray()
 
 [node name="BuildingLayer" parent="." instance=ExtResource("3_31ed8")]
+tile_map_data = PackedByteArray(0, 0, 250, 255, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 253, 255, 252, 255, 1, 0, 0, 0, 0, 0, 0, 0)
 
 [node name="GCC2D" parent="." instance=ExtResource("1_5l45t")]
 

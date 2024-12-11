@@ -1,33 +1,56 @@
 extends TileMapLayer
 
-var moisture = FastNoiseLite.new()
-var temperature = FastNoiseLite.new()
-var altitude = FastNoiseLite.new()
+class_name GroundLayer
 
-var width = 64
-var height = 64
-
-var loaded_chunks = []
+@export var water_tiles: Array = []
+const WATER_TILE_SRC = 1
+const WATER_LITRE_TO_LEVEL = 0.001
 
 func _ready():
-	moisture.seed = randi()
-	temperature.seed = randi()
-	altitude.seed = randi()
-	altitude.frequency = 0.01
+	calculate_water_tiles()
+	print(water_tiles)
+	
+func get_water_group(pos : Vector2i):
+	var water_group = []
+	var queue = [pos]
+	while not queue.is_empty():
+		var cell = queue.pop_front()
+		if get_cell_source_id(cell) == WATER_TILE_SRC and cell not in water_group:
+			water_group.append(cell)
+			for i in get_surrounding_cells(cell):
+				if i not in water_group and i not in queue:
+					queue.append(i)
+	return water_group
 
-	for i in range(5,55):
-		for j in range(5,55):
-			pass
-			# generate_chunk(Vector2(i,j))
+func water_cell_done(pos: Vector2i)->bool:
+	for i in water_tiles:
+		if pos in i:
+			return true
+	return false
 
-func generate_chunk(pos):
-	for x in range(width):
-		for y in range(height):
-			var moist = moisture.get_noise_2d(pos.x,pos.y)*10
-			var temp = temperature.get_noise_2d(pos.x,pos.y)*10
-			var alt = altitude.get_noise_2d(pos.x,pos.y)*10
-			set_cell(Vector2i(pos.x, pos.y), 0, Vector2(round(3 * (moist + 10) / 20), round(3*(temp + 10)/20)))
-			
-#func _input(event: InputEvent) -> void:
-	#if event is InputEventMouseButton and event.is_pressed():
-		#print(local_to_map(event.global_position-global_position))
+func calculate_water_tiles():
+		var water_cells = get_used_cells_by_id(WATER_TILE_SRC)
+		for i in water_cells:
+			if not water_cell_done(i):
+				water_tiles.append(get_water_group(i))
+	
+func water_group(pos: Vector2i):
+	for i in water_tiles:
+		if pos in i:
+			return i
+	assert(false, "No water tile over here!")
+
+func pump_out_water(quantity: int, pos: Vector2i):
+	var wg = water_group(pos)
+	var total_tiles = len(wg)
+	var decrease = quantity * WATER_LITRE_TO_LEVEL / total_tiles
+	var data = get_cell_tile_data(pos)
+	var water_level = data.get_custom_data("wl") - decrease
+	print(water_level)
+	var water_quality = data.get_custom_data("wq")
+	for i in wg:
+		get_cell_tile_data(i).set_custom_data("wl", water_level)
+		
+	Water.new(quantity, pos, water_quality)
+	
+	
