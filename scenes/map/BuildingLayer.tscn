@@ -116,5 +116,8 @@ autostart = true
 [node name="ice_drill_timer" type="Timer" parent="."]
 autostart = true
 
+[node name="condenser_timer" type="Timer" parent="."]
+
 [connection signal="timeout" from="drill_timer" to="." method="_on_drill_timer_timeout"]
 [connection signal="timeout" from="ice_drill_timer" to="." method="_on_ice_drill_timer_timeout"]
+[connection signal="timeout" from="condenser_timer" to="." method="_on_condenser_timer_timeout"]

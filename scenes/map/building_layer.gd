@@ -51,5 +51,16 @@ func _on_water_tank_timer_timeout() -> void:
 
 
 func _on_ice_drill_timer_timeout() -> void:
-	var ice_drills = Global.ICE_THRESHOLD/500
-	Global.add_ice_currency(2*ice_drills)
+	var ground_layer : TileMapLayer = get_tree().get_first_node_in_group("tilemap")
+	var ice_drills = get_used_cells_by_id(3)
+	var i = 0
+	for j in ice_drills:
+		if get_cell_atlas_coords(j) == Vector2i(7,0):
+			i+=1
+	Global.add_ice_currency(2*i)
+
+
+func _on_condenser_timer_timeout() -> void:
+	var condensors = len(get_used_cells_by_id(8))
+	Global.add_water_currency(5*condensors)
+	Global.add_ice_currency(-condensors)

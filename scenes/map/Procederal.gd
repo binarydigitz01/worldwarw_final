@@ -40,7 +40,7 @@ func water_group(pos: Vector2i):
 	for i in water_tiles:
 		if pos in i:
 			return i
-	assert(false, "No water tile over here!")
+		assert(false, "No water tile over here!")
 
 func pump_out_water(quantity: int, pos: Vector2i,ground_water = false, create_water=true):
 	if ground_water:
