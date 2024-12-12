@@ -81,7 +81,7 @@ size_flags_horizontal = 3
 texture = ExtResource("4_ap0d5")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/Label"]
+[node name="Label" type="Label" parent="CanvasLayer/Label" groups=["ice_label"]]
 physics_interpolation_mode = 0
 layout_mode = 0
 offset_left = 168.0

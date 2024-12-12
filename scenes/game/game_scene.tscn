@@ -25,12 +25,13 @@ tile_map_data = PackedByteArray("AAD//wAAAgAOAAAAAAAAAAAAAgANAAAAAAAAAP//AgAPAAA
 z_index = 25
 tile_map_data = PackedByteArray("AAD6////AAAAAAAAAAD9//z/AQAAAAAAAAD9////BAAAAAAAAAD9//7/BAAAAAAAAAD7/wIABQAAAAAAAAD7//3/AgAAAAAAAAA=")
 
-[node name="GCC2D" parent="." instance=ExtResource("1_5l45t")]
-zoom = Vector2(2, 2)
-
 [node name="Civilian" parent="." instance=ExtResource("5_c41sx")]
 z_index = 2
 position = Vector2(264, -68)
+
+[node name="GCC2D" parent="Civilian" instance=ExtResource("1_5l45t")]
+position = Vector2(-264, 68)
+zoom = Vector2(2, 2)
 
 [node name="Builder" parent="." instance=ExtResource("6_6bcfd")]
 z_index = 25
