@@ -42,7 +42,7 @@ func water_group(pos: Vector2i):
 			return i
 	assert(false, "No water tile over here!")
 
-func pump_out_water(quantity: int, pos: Vector2i):
+func pump_out_water(quantity: int, pos: Vector2i,ground_water = false):
 	var wg = water_group(pos)
 	var total_tiles = len(wg)
 	var decrease = quantity * WATER_LITRE_TO_LEVEL / total_tiles
@@ -66,5 +66,9 @@ func pump_out_water(quantity: int, pos: Vector2i):
 	rect_coords = pipe_layer.local_to_map(rect_coords)
 
 	Water.new(quantity, rect_coords, water_quality)
+	if ground_water:
+		Global.update_groundwater(Global.ground_water-1)
+	
+	
 	
 	

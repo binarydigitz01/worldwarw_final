@@ -21,7 +21,7 @@ tile_map_data = PackedByteArray("AAD//wAAAgAOAAAAAAAAAAAAAgANAAAAAAAAAP//AgAPAAA
 
 [node name="BuildingLayer" parent="." instance=ExtResource("3_31ed8")]
 z_index = 25
-tile_map_data = PackedByteArray("AAD6////AAAAAAAAAAD9//z/AQAAAAAAAAD9////BAAAAAAAAAD9//7/BAAAAAAAAAD7/wIABQAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD6////AAAAAAAAAAD9//z/AQAAAAAAAAD9////BAAAAAAAAAD9//7/BAAAAAAAAAD7/wIABQAAAAAAAAD7//3/AgAAAAAAAAA=")
 
 [node name="GCC2D" parent="." instance=ExtResource("1_5l45t")]
 
