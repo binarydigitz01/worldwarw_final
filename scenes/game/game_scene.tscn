@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://bx8afk3vnki0n" path="res://scenes/map/PipeLayer.tscn" id="2_qktpy"]
 [ext_resource type="PackedScene" uid="uid://pggmy2xqcf5i" path="res://scenes/map/BuildingLayer.tscn" id="3_31ed8"]
 [ext_resource type="PackedScene" uid="uid://w5mjfqkbcxt8" path="res://scenes/character/civilian.tscn" id="5_c41sx"]
-[ext_resource type="PackedScene" path="res://scenes/character/builder.tscn" id="6_6bcfd"]
-[ext_resource type="PackedScene" path="res://scenes/character/researcher.tscn" id="7_hsiyw"]
+[ext_resource type="PackedScene" uid="uid://cgh3eha8epn43" path="res://scenes/character/builder.tscn" id="6_6bcfd"]
+[ext_resource type="PackedScene" uid="uid://bkk7lvhvxvk8g" path="res://scenes/character/researcher.tscn" id="7_hsiyw"]
 [ext_resource type="PackedScene" uid="uid://xcm6xugaajk6" path="res://scenes/HUD/hud.tscn" id="7_l6ldm"]
 
 [node name="GameScene" type="Node2D"]
@@ -26,6 +26,7 @@ z_index = 25
 tile_map_data = PackedByteArray("AAD6////AAAAAAAAAAD9//z/AQAAAAAAAAD9////BAAAAAAAAAD9//7/BAAAAAAAAAD7/wIABQAAAAAAAAD7//3/AgAAAAAAAAA=")
 
 [node name="GCC2D" parent="." instance=ExtResource("1_5l45t")]
+zoom = Vector2(2, 2)
 
 [node name="Civilian" parent="." instance=ExtResource("5_c41sx")]
 z_index = 2

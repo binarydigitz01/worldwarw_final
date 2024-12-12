@@ -28,6 +28,7 @@ BuildingLayer=""
 groundwatertp=""
 water_currency=""
 water_redstone_timer=""
+water_pollution_level=""
 
 [input]
 

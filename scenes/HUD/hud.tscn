@@ -32,7 +32,7 @@ size_flags_horizontal = 3
 texture = ExtResource("1_of4q0")
 expand_mode = 2
 
-[node name="Label2" type="Label" parent="CanvasLayer"]
+[node name="Label2" type="Label" parent="CanvasLayer" groups=["water_pollution_level"]]
 physics_interpolation_mode = 0
 offset_left = 932.0
 offset_top = 37.0
@@ -44,7 +44,7 @@ theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
 theme_override_fonts/font = ExtResource("2_m4ayd")
 theme_override_font_sizes/font_size = 22
-text = "100%"
+text = "0%"
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
 physics_interpolation_mode = 0

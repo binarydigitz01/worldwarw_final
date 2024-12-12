@@ -15,12 +15,14 @@ func _on_drill_timer_timeout() -> void:
 	for t in water_drill_tiles:
 		if Global.water_currency < Global.CURRENCY_THRESHOLD:
 			Global.add_water_currency(WATER_DRILL_RATE)
+			ground_layer.pump_out_water(WATER_DRILL_RATE, t, false, false)
 		else:
 			ground_layer.pump_out_water(WATER_DRILL_RATE, t)
 	var hand_pumps = get_used_cells_by_id(2)
 	for t in hand_pumps:
 		if Global.water_currency < Global.CURRENCY_THRESHOLD:
 			Global.add_water_currency(WATER_DRILL_RATE)
+			ground_layer.pump_out_water(WATER_DRILL_RATE, t,true,true)
 		else:
 			ground_layer.pump_out_water(WATER_DRILL_RATE,t,true)
 
