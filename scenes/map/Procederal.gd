@@ -5,7 +5,7 @@ class_name GroundLayer
 @export var water_tiles: Array = []
 const WATER_TILE_SRC = 1
 const WATER_LITRE_TO_LEVEL = 0.001
-const WATER_QUALITY_DECREASE = 2
+const WATER_QUALITY_DECREASE = 30
 
 @onready var pipe_layer = get_tree().get_first_node_in_group("PipeLayer")
 func _ready():

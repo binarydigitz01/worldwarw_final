@@ -9,8 +9,14 @@ func _on_button_pressed() -> void:
 	print(name)
 	if name == "Water Drill":
 		Global.current_tile = Vector3i(0,0,0)
+		Global.add_water_currency(-300)
 	if name == "Water Pump":
 		Global.current_tile = Vector3i(2,0,0)
+		Global.add_water_currency(-1000)
 	if name == "Laboratory":
 		Global.current_tile = Vector3i(5,0,0)
+	queue_free()
+
+
+func _on_button_2_pressed() -> void:
 	queue_free()
