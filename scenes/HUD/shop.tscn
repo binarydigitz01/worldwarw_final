@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://b0mxet50fnfkr"]
+[gd_scene load_steps=30 format=3 uid="uid://b0mxet50fnfkr"]
 
 [ext_resource type="Texture2D" uid="uid://dccwsj4mcdlrk" path="res://assets/equipment/individual/water-drill.png" id="1_276u5"]
 [ext_resource type="FontFile" uid="uid://b2sqmunikjnkm" path="res://assets/fonts/dogicapixel.ttf" id="2_odf7g"]
+[ext_resource type="Texture2D" uid="uid://ckn2bue8n8e82" path="res://assets/equipment/individual/pipes_final_sprite.png" id="2_vd2wf"]
 [ext_resource type="Texture2D" uid="uid://bjc14t38tq686" path="res://assets/equipment/individual/icedrill_sprite.png" id="3_ppdkg"]
 [ext_resource type="Texture2D" uid="uid://b1lcj17qudw40" path="res://assets/pictures/icons/icon_water_drop.png" id="3_v8lk2"]
 [ext_resource type="Texture2D" uid="uid://7jxdcmcakgav" path="res://assets/equipment/individual/watertank1.png" id="4_4ood8"]
@@ -77,6 +78,36 @@ corner_radius_top_right = 7
 corner_radius_bottom_right = 7
 corner_radius_bottom_left = 7
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3uwye"]
+bg_color = Color(0.999757, 0.208554, 0.198965, 1)
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.591292, 0, 0.0447611, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wb2jv"]
+bg_color = Color(0.592157, 0, 0.0431373, 1)
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.591292, 0, 0.0447611, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1rwc"]
+bg_color = Color(0.960784, 0, 0.101961, 1)
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.591292, 0, 0.0447611, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
 [node name="Shop" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -145,11 +176,12 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox"]
 clip_contents = true
-offset_left = 25.0
-offset_right = 65.0
-offset_bottom = 40.0
+offset_left = 24.0678
+offset_top = 32.8007
+offset_right = 64.0678
+offset_bottom = 72.8007
 scale = Vector2(6, 6)
-texture = ExtResource("1_276u5")
+texture = ExtResource("2_vd2wf")
 expand_mode = 4
 
 [node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox"]
@@ -160,7 +192,7 @@ offset_bottom = 250.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_odf7g")
 theme_override_font_sizes/font_size = 24
-text = "Water Drill"
+text = "PIPES"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -181,6 +213,27 @@ offset_right = 49.9677
 offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "100"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
 
 [node name="CheckBox2" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 258.324
@@ -253,6 +306,26 @@ offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
 
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "300"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
 [node name="CheckBox3" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 474.809
 offset_top = 103.022
@@ -323,6 +396,26 @@ offset_right = 49.9677
 offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "600"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
 
 [node name="CheckBox4" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 691.293
@@ -395,6 +488,26 @@ offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
 
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "500"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
 [node name="CheckBox5" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 907.777
 offset_top = 103.022
@@ -465,6 +578,26 @@ offset_right = 49.9677
 offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "1000"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
 
 [node name="CheckBox6" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 39.6804
@@ -537,6 +670,28 @@ offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
 
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "4000
+"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "200
+"
+
 [node name="CheckBox7" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 258.324
 offset_top = 342.557
@@ -560,6 +715,7 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+disabled = true
 action_mode = 0
 button_group = SubResource("ButtonGroup_xp7rn")
 text = "
@@ -608,6 +764,27 @@ offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
 
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "7000"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "200
+"
+
 [node name="CheckBox8" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 474.809
 offset_top = 342.557
@@ -631,6 +808,7 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+disabled = true
 action_mode = 0
 button_group = SubResource("ButtonGroup_xp7rn")
 text = "
@@ -658,7 +836,8 @@ offset_bottom = 250.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_odf7g")
 theme_override_font_sizes/font_size = 24
-text = "Iced-Pot"
+text = "Ice Depot
+"
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
@@ -678,6 +857,26 @@ offset_right = 49.9677
 offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "1000"
 
 [node name="CheckBox9" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 691.293
@@ -702,6 +901,7 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+disabled = true
 action_mode = 0
 button_group = SubResource("ButtonGroup_xp7rn")
 text = "
@@ -750,6 +950,27 @@ offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
 
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "2000"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "6000
+"
+
 [node name="CheckBox10" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
 offset_left = 907.777
 offset_top = 342.557
@@ -773,6 +994,7 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
 theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+disabled = true
 action_mode = 0
 button_group = SubResource("ButtonGroup_xp7rn")
 text = "
@@ -822,20 +1044,40 @@ offset_bottom = 321.106
 texture = ExtResource("4_802h2")
 expand_mode = 2
 
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "10000"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "5000"
+
 [node name="Builder" type="Sprite2D" parent="CanvasLayer/Panel/Panel"]
 position = Vector2(45.1284, 658.679)
 scale = Vector2(7.0567, 7.64929)
 texture = ExtResource("11_dynfv")
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-offset_top = 67.0
-offset_right = 1152.0
-offset_bottom = 90.0
+offset_left = 152.0
+offset_top = 73.0
+offset_right = 633.0
+offset_bottom = 100.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("11_mci63")
 theme_override_font_sizes/font_size = 30
 text = "\"BOB\" THE BUILDER"
-horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Button" type="Button" parent="CanvasLayer"]
@@ -848,3 +1090,27 @@ theme_override_font_sizes/font_size = 22
 theme_override_styles/focus = SubResource("StyleBoxEmpty_g3hmt")
 theme_override_styles/normal = SubResource("StyleBoxFlat_uwon5")
 text = "BUY"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+offset_top = 528.0
+offset_right = 1152.0
+offset_bottom = 555.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 16
+text = "Select Object to Build"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+offset_left = 983.0
+offset_top = 60.0
+offset_right = 1029.0
+offset_bottom = 101.0
+theme_override_fonts/font = ExtResource("11_mci63")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_g3hmt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3uwye")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wb2jv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_x1rwc")
+text = "×"
