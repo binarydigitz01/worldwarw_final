@@ -5,6 +5,7 @@ class_name GroundLayer
 @export var water_tiles: Array = []
 const WATER_TILE_SRC = 1
 const WATER_LITRE_TO_LEVEL = 0.001
+const WATER_QUALITY_DECREASE = 2
 
 @onready var pipe_layer = get_tree().get_first_node_in_group("PipeLayer")
 func _ready():
@@ -45,12 +46,19 @@ func pump_out_water(quantity: int, pos: Vector2i):
 	var wg = water_group(pos)
 	var total_tiles = len(wg)
 	var decrease = quantity * WATER_LITRE_TO_LEVEL / total_tiles
+	var quality_decrease = WATER_QUALITY_DECREASE / total_tiles
 	var data = get_cell_tile_data(pos)
 	var water_level = data.get_custom_data("wl") - decrease
 	print(water_level)
-	var water_quality = data.get_custom_data("wq")
+	var water_quality = data.get_custom_data("wq") - quality_decrease
+	print(water_quality)
 	for i in wg:
 		get_cell_tile_data(i).set_custom_data("wl", water_level)
+		get_cell_tile_data(i).set_custom_data("wq",water_quality)
+		if water_quality > 33 and water_quality < 66:
+			set_cell(i,1,Vector2i(1,0))
+		elif water_quality < 33:
+			set_cell(i,1,Vector2i(2,0))
 		
 	var rect_coords = map_to_local(pos)
 	rect_coords.x += 32
