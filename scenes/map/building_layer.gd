@@ -49,9 +49,6 @@ func _on_water_tank_timer_timeout() -> void:
 				tile_data = get_cell_tile_data(i)
 				tile_data.set_custom_data("water_tank", w_stored)
 
-				
-				
-
 
 func _on_ice_drill_timer_timeout() -> void:
 	var ice_drills = Global.ICE_THRESHOLD/500
