@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj33e5061rs3i"
-path="res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"
+uid="uid://bjc14t38tq686"
+path="res://.godot/imported/icedrill_sprite.png-25b6436e62ea2056c3cb78ffb175b8d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/icons/settings.png"
-dest_files=["res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"]
+source_file="res://assets/equipment/individual/icedrill_sprite.png"
+dest_files=["res://.godot/imported/icedrill_sprite.png-25b6436e62ea2056c3cb78ffb175b8d2.ctex"]
 
 [params]
 

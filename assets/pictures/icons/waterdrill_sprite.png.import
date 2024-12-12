@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj33e5061rs3i"
-path="res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"
+uid="uid://clg14njt7iqs2"
+path="res://.godot/imported/waterdrill_sprite.png-33277b990b63f230bada28aa03da427f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/icons/settings.png"
-dest_files=["res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"]
+source_file="res://assets/pictures/icons/waterdrill_sprite.png"
+dest_files=["res://.godot/imported/waterdrill_sprite.png-33277b990b63f230bada28aa03da427f.ctex"]
 
 [params]
 

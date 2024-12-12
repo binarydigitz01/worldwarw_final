@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj33e5061rs3i"
-path="res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"
+uid="uid://cemojgcvspyum"
+path="res://.godot/imported/condenser.png-1fff136b497e6b60f2c0c8b7c57530f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/icons/settings.png"
-dest_files=["res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"]
+source_file="res://assets/buildings/condenser.png"
+dest_files=["res://.godot/imported/condenser.png-1fff136b497e6b60f2c0c8b7c57530f0.ctex"]
 
 [params]
 

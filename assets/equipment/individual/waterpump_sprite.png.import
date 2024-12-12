@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj33e5061rs3i"
-path="res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"
+uid="uid://4f5hji1jvo7y"
+path="res://.godot/imported/waterpump_sprite.png-3726fb72decd39f0992c3e564c0e8e96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/icons/settings.png"
-dest_files=["res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"]
+source_file="res://assets/equipment/individual/waterpump_sprite.png"
+dest_files=["res://.godot/imported/waterpump_sprite.png-3726fb72decd39f0992c3e564c0e8e96.ctex"]
 
 [params]
 

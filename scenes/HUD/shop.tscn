@@ -1,0 +1,1174 @@
+[gd_scene load_steps=31 format=3 uid="uid://ctoojnam3pyhc"]
+
+[ext_resource type="Texture2D" uid="uid://dccwsj4mcdlrk" path="res://assets/equipment/individual/water-drill.png" id="1_276u5"]
+[ext_resource type="Script" path="res://scenes/HUD/shop.gd" id="1_cpjto"]
+[ext_resource type="FontFile" uid="uid://b2sqmunikjnkm" path="res://assets/fonts/dogicapixel.ttf" id="2_odf7g"]
+[ext_resource type="Texture2D" uid="uid://ckn2bue8n8e82" path="res://assets/equipment/individual/pipes_final_sprite.png" id="2_vd2wf"]
+[ext_resource type="Texture2D" uid="uid://bjc14t38tq686" path="res://assets/equipment/individual/icedrill_sprite.png" id="3_ppdkg"]
+[ext_resource type="Texture2D" uid="uid://b1lcj17qudw40" path="res://assets/pictures/icons/icon_water_drop.png" id="3_v8lk2"]
+[ext_resource type="Texture2D" uid="uid://7jxdcmcakgav" path="res://assets/equipment/individual/watertank1.png" id="4_4ood8"]
+[ext_resource type="Texture2D" uid="uid://clpgk0ln0p3xr" path="res://assets/pictures/icons/icon_ice.png" id="4_802h2"]
+[ext_resource type="Texture2D" uid="uid://4f5hji1jvo7y" path="res://assets/equipment/individual/waterpump_sprite.png" id="5_5v65s"]
+[ext_resource type="Texture2D" uid="uid://dypvdgjw7l7k6" path="res://assets/equipment/individual/workshop.png" id="6_xm5fy"]
+[ext_resource type="Texture2D" uid="uid://3rex4at0trwc" path="res://assets/equipment/individual/lab.png" id="7_lqj83"]
+[ext_resource type="Texture2D" uid="uid://cbaqvaupdshm8" path="res://assets/equipment/individual/icedepot.png" id="8_4a52e"]
+[ext_resource type="Texture2D" uid="uid://0wodi3cxeo4j" path="res://assets/equipment/individual/condenser.png" id="9_b667e"]
+[ext_resource type="Texture2D" uid="uid://pl7pykomwv7u" path="res://assets/equipment/individual/waterharvester.png" id="10_0ek0s"]
+[ext_resource type="Texture2D" uid="uid://bkdf57wfqwyy2" path="res://assets/character/individual/builder.png" id="11_dynfv"]
+[ext_resource type="FontFile" uid="uid://jbwwawwo4t4x" path="res://assets/fonts/dogicapixelbold.ttf" id="11_mci63"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fuv7u"]
+bg_color = Color(0, 0, 0, 0.576471)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tc3li"]
+bg_color = Color(0.633757, 0.633757, 0.633757, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.228511, 0.228511, 0.228511, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+shadow_size = 37
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bn7qw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8s1hr"]
+bg_color = Color(0.478431, 0.478431, 0.478431, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_22dqr"]
+bg_color = Color(0.848213, 0.945696, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nvd3u"]
+bg_color = Color(0.68101, 0.68101, 0.68101, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ja43m"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_xp7rn"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_2pg87"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g3hmt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uwon5"]
+bg_color = Color(0.349914, 0.640108, 0.785463, 1)
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.203819, 0.434735, 0.547127, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3uwye"]
+bg_color = Color(0.999757, 0.208554, 0.198965, 1)
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.591292, 0, 0.0447611, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wb2jv"]
+bg_color = Color(0.592157, 0, 0.0431373, 1)
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.591292, 0, 0.0447611, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1rwc"]
+bg_color = Color(0.960784, 0, 0.101961, 1)
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(0.591292, 0, 0.0447611, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="Shop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cpjto")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fuv7u")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 114.0
+offset_top = 42.0
+offset_right = 114.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.812992, 0.812992)
+theme_override_styles/panel = SubResource("StyleBoxFlat_tc3li")
+
+[node name="CheckBox" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 39.6804
+offset_top = 100.862
+offset_right = 339.68
+offset_bottom = 450.862
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox"]
+clip_contents = true
+layout_mode = 0
+offset_left = 24.0678
+offset_top = 32.8007
+offset_right = 64.0678
+offset_bottom = 72.8007
+scale = Vector2(6, 6)
+texture = ExtResource("2_vd2wf")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "PIPES"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "100"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
+[node name="CheckBox2" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 258.324
+offset_top = 103.022
+offset_right = 558.324
+offset_bottom = 453.022
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("1_276u5")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "Water Drill"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "300"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
+[node name="CheckBox3" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 474.809
+offset_top = 103.022
+offset_right = 774.809
+offset_bottom = 453.022
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("3_ppdkg")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "Ice Drill"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "600"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
+[node name="CheckBox4" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 691.293
+offset_top = 103.022
+offset_right = 991.293
+offset_bottom = 453.022
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("4_4ood8")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "Water Tank"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "500"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
+[node name="CheckBox5" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 907.777
+offset_top = 103.022
+offset_right = 1207.78
+offset_bottom = 453.022
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("5_5v65s")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "Water Pump"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "1000"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
+[node name="CheckBox6" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 39.6804
+offset_top = 340.397
+offset_right = 339.68
+offset_bottom = 690.397
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("6_xm5fy")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "WORKSHOP"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "4000
+"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "200
+"
+
+[node name="CheckBox7" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 258.324
+offset_top = 342.557
+offset_right = 558.324
+offset_bottom = 692.557
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("7_lqj83")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "Laboratory"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "7000"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "200
+"
+
+[node name="CheckBox8" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 474.809
+offset_top = 342.557
+offset_right = 774.809
+offset_bottom = 692.557
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("8_4a52e")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "Ice Depot"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "NA"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "500"
+
+[node name="CheckBox9" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 691.293
+offset_top = 342.557
+offset_right = 991.293
+offset_bottom = 692.557
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("9_b667e")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "Condenser"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "2000"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "6000
+"
+
+[node name="CheckBox10" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
+offset_left = 907.777
+offset_top = 342.557
+offset_right = 1207.78
+offset_bottom = 692.557
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.847059, 0.945098, 1, 1)
+theme_override_colors/icon_disabled_color = Color(0.47788, 0.47788, 0.47788, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bn7qw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_8s1hr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvd3u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_22dqr")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja43m")
+action_mode = 0
+button_group = SubResource("ButtonGroup_xp7rn")
+text = "
+"
+icon = SubResource("CanvasTexture_2pg87")
+alignment = 1
+autowrap_mode = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+clip_contents = true
+layout_mode = 0
+offset_left = 25.0
+offset_right = 65.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+texture = ExtResource("10_0ek0s")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 300.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 24
+text = "WATER
+HARVESTER"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 254.205
+offset_right = 49.9677
+offset_bottom = 284.205
+texture = ExtResource("3_v8lk2")
+expand_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+layout_mode = 0
+offset_left = 19.9677
+offset_top = 291.106
+offset_right = 49.9677
+offset_bottom = 321.106
+texture = ExtResource("4_802h2")
+expand_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 260.0
+offset_right = 280.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "10000"
+
+[node name="Label3" type="Label" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 296.901
+offset_right = 280.0
+offset_bottom = 321.901
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 18
+text = "5000"
+
+[node name="Builder" type="Sprite2D" parent="CanvasLayer/Panel/Panel"]
+position = Vector2(45.1284, 658.679)
+scale = Vector2(7.0567, 7.64929)
+texture = ExtResource("11_dynfv")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 152.0
+offset_top = 73.0
+offset_right = 633.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_mci63")
+theme_override_font_sizes/font_size = 30
+text = "'BOB' THE BUILDER"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 852.0
+offset_top = 513.0
+offset_right = 1002.0
+offset_bottom = 571.0
+theme_override_fonts/font = ExtResource("11_mci63")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_g3hmt")
+theme_override_styles/normal = SubResource("StyleBoxFlat_uwon5")
+text = "BUY"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+offset_left = 239.0
+offset_top = 528.0
+offset_right = 576.0
+offset_bottom = 567.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_odf7g")
+theme_override_font_sizes/font_size = 16
+text = "\"Can we build it? Yes we can!\"
+                         — Bob"
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+offset_left = 975.0
+offset_top = 68.0
+offset_right = 1021.0
+offset_bottom = 109.0
+theme_override_fonts/font = ExtResource("11_mci63")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_g3hmt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3uwye")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wb2jv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_x1rwc")
+text = "×"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]

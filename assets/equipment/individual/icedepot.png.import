@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj33e5061rs3i"
-path="res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"
+uid="uid://cbaqvaupdshm8"
+path="res://.godot/imported/icedepot.png-bfec17bfcf0ebd7f09e069d80a1ce96f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/icons/settings.png"
-dest_files=["res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"]
+source_file="res://assets/equipment/individual/icedepot.png"
+dest_files=["res://.godot/imported/icedepot.png-bfec17bfcf0ebd7f09e069d80a1ce96f.ctex"]
 
 [params]
 

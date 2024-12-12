@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj33e5061rs3i"
-path="res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"
+uid="uid://dccwsj4mcdlrk"
+path="res://.godot/imported/water-drill.png-5232696f0d53124dbf3efa48eca91b23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/icons/settings.png"
-dest_files=["res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"]
+source_file="res://assets/equipment/individual/water-drill.png"
+dest_files=["res://.godot/imported/water-drill.png-5232696f0d53124dbf3efa48eca91b23.ctex"]
 
 [params]
 

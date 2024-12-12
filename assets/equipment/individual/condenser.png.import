@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj33e5061rs3i"
-path="res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"
+uid="uid://0wodi3cxeo4j"
+path="res://.godot/imported/condenser.png-10d925acc60b0f43d92f19389161f038.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pictures/icons/settings.png"
-dest_files=["res://.godot/imported/settings.png-632ccbebd25d559ad85dcad1058cb036.ctex"]
+source_file="res://assets/equipment/individual/condenser.png"
+dest_files=["res://.godot/imported/condenser.png-10d925acc60b0f43d92f19389161f038.ctex"]
 
 [params]
 
