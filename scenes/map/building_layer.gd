@@ -15,8 +15,16 @@ func _on_drill_timer_timeout() -> void:
 	for t in water_drill_tiles:
 		if Global.water_currency < Global.CURRENCY_THRESHOLD:
 			Global.add_water_currency(WATER_DRILL_RATE)
+			ground_layer.pump_out_water(WATER_DRILL_RATE, t, false, false)
 		else:
 			ground_layer.pump_out_water(WATER_DRILL_RATE, t)
+	var hand_pumps = get_used_cells_by_id(2)
+	for t in hand_pumps:
+		if Global.water_currency < Global.CURRENCY_THRESHOLD:
+			Global.add_water_currency(WATER_DRILL_RATE)
+			ground_layer.pump_out_water(WATER_DRILL_RATE, t,true,false)
+		else:
+			ground_layer.pump_out_water(WATER_DRILL_RATE,t,true)
 
 func _on_water_tank_timer_timeout() -> void:
 	var water_tanks = get_used_cells_by_id(WATER_TANK_SOURCE)
@@ -25,11 +33,12 @@ func _on_water_tank_timer_timeout() -> void:
 		if tile_data.get_custom_data("water_tank") == WATER_TANK_LIMIT:
 			continue
 		for j in range(0,len(Global.water_array)):
+			if len(Global.water_array) <= j:
+				break
 			if i == Global.water_array[j].travelled[-1]:
 				var w = Global.water_array[j] as Water
 				Global.water_array.remove_at(j)
 				var w_stored = tile_data.get_custom_data("water_tank")
-				print(w_stored)
 				w_stored = clamp(w_stored + w.quantity,0,WATER_TANK_LIMIT)
 				if w_stored < WATER_TANK_LIMIT/3:
 					set_cell(i, WATER_TANK_SOURCE,Vector2i(0,0))
@@ -42,3 +51,8 @@ func _on_water_tank_timer_timeout() -> void:
 
 				
 				
+
+
+func _on_ice_drill_timer_timeout() -> void:
+	var ice_drills = Global.ICE_THRESHOLD/500
+	Global.add_ice_currency(2*ice_drills)
