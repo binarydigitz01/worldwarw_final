@@ -18,7 +18,6 @@ func _on_drill_timer_timeout() -> void:
 		else:
 			ground_layer.pump_out_water(WATER_DRILL_RATE, t)
 
-
 func _on_water_tank_timer_timeout() -> void:
 	var water_tanks = get_used_cells_by_id(WATER_TANK_SOURCE)
 	for i in water_tanks:

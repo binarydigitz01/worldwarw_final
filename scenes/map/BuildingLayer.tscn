@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://pggmy2xqcf5i"]
+[gd_scene load_steps=15 format=3 uid="uid://pggmy2xqcf5i"]
 
 [ext_resource type="Texture2D" uid="uid://csyqkne5afvuy" path="res://assets/equipment/waterdrill_sprite.png" id="1_adi78"]
 [ext_resource type="Texture2D" uid="uid://cupypbgak0wg1" path="res://assets/equipment/waterpump_sprite.png" id="2_2085o"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ff5ivocpry3v" path="res://assets/equipment/icedrill_sprite.png" id="3_7ox3q"]
 [ext_resource type="Script" path="res://scenes/map/building_layer.gd" id="4_x70nq"]
 [ext_resource type="Texture2D" uid="uid://bbw0vsxifqql" path="res://assets/equipment/watertank_sprite.png" id="5_i0d4k"]
+[ext_resource type="Texture2D" uid="uid://l34r3cmyokbk" path="res://assets/buildings/lab.png" id="6_atwo3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vbgjg"]
 texture = ExtResource("1_adi78")
@@ -60,6 +61,15 @@ texture_region_size = Vector2i(64, 64)
 2:0/0 = 0
 3:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lgik8"]
+texture = ExtResource("6_atwo3")
+texture_region_size = Vector2i(64, 64)
+0:0/animation_columns = 3
+0:0/animation_frame_0/duration = 0.2
+0:0/animation_frame_1/duration = 0.21
+0:0/animation_frame_2/duration = 0.2
+0:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_vy1fe"]
 tile_shape = 3
 tile_layout = 5
@@ -73,6 +83,7 @@ sources/2 = SubResource("TileSetAtlasSource_v0ul5")
 sources/3 = SubResource("TileSetAtlasSource_n5el0")
 sources/1 = SubResource("TileSetAtlasSource_svysn")
 sources/4 = SubResource("TileSetAtlasSource_ysojt")
+sources/5 = SubResource("TileSetAtlasSource_lgik8")
 
 [node name="BuildingLayer" type="TileMapLayer" groups=["BuildingLayer"]]
 tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0)
