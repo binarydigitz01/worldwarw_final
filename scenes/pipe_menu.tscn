@@ -1,0 +1,204 @@
+[gd_scene load_steps=13 format=3 uid="uid://e8gsvwh8c6ea"]
+
+[ext_resource type="Texture2D" uid="uid://dixhct20fa7cl" path="res://assets/equipment/individual/pipe1.png" id="1_vaiar"]
+[ext_resource type="Texture2D" uid="uid://bkyraukei4nl4" path="res://assets/equipment/individual/pipe2.png" id="2_copan"]
+[ext_resource type="Texture2D" uid="uid://c6b6gffn1wtym" path="res://assets/equipment/individual/pipe3.png" id="3_8ldnk"]
+[ext_resource type="Texture2D" uid="uid://bi2qoaxovcbgi" path="res://assets/equipment/individual/pipe4.png" id="4_dau2y"]
+[ext_resource type="Texture2D" uid="uid://dlrnw6ypqs8fh" path="res://assets/equipment/individual/pipe5.png" id="5_x4sgg"]
+[ext_resource type="Texture2D" uid="uid://ce5tp5v4dj3jv" path="res://assets/equipment/individual/pipe6.png" id="6_4vmn8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2f2mt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_emq8p"]
+bg_color = Color(0.68101, 0.68101, 0.68101, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_foigb"]
+bg_color = Color(0.848213, 0.945696, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4mip3"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.359069, 0.359069, 0.359069, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0.237539, 0.237539, 0.237539, 0.6)
+shadow_size = 4
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_lru1b"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_u4vqm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CheckBox" type="CheckBox" parent="CanvasLayer"]
+offset_left = 397.0
+offset_top = 503.0
+offset_right = 517.0
+offset_bottom = 623.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2f2mt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_emq8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_foigb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4mip3")
+button_group = SubResource("ButtonGroup_lru1b")
+icon = SubResource("CanvasTexture_u4vqm")
+alignment = 1
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox"]
+layout_mode = 0
+offset_left = 6.5
+offset_top = 6.0
+offset_right = 116.5
+offset_bottom = 116.0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("1_vaiar")
+
+[node name="CheckBox2" type="CheckBox" parent="CanvasLayer"]
+offset_left = 533.0
+offset_top = 503.0
+offset_right = 653.0
+offset_bottom = 623.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2f2mt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_emq8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_foigb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4mip3")
+button_group = SubResource("ButtonGroup_lru1b")
+icon = SubResource("CanvasTexture_u4vqm")
+alignment = 1
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox2"]
+offset_left = 6.5
+offset_top = 6.0
+offset_right = 116.5
+offset_bottom = 116.0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_copan")
+
+[node name="CheckBox3" type="CheckBox" parent="CanvasLayer"]
+offset_left = 123.0
+offset_top = 503.0
+offset_right = 243.0
+offset_bottom = 623.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2f2mt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_emq8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_foigb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4mip3")
+button_group = SubResource("ButtonGroup_lru1b")
+icon = SubResource("CanvasTexture_u4vqm")
+alignment = 1
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox3"]
+offset_left = 6.5
+offset_top = 6.0
+offset_right = 116.5
+offset_bottom = 116.0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("3_8ldnk")
+
+[node name="CheckBox4" type="CheckBox" parent="CanvasLayer"]
+offset_left = 259.0
+offset_top = 503.0
+offset_right = 379.0
+offset_bottom = 623.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2f2mt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_emq8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_foigb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4mip3")
+button_group = SubResource("ButtonGroup_lru1b")
+icon = SubResource("CanvasTexture_u4vqm")
+alignment = 1
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox4"]
+offset_left = 6.5
+offset_top = 6.0
+offset_right = 116.5
+offset_bottom = 116.0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("4_dau2y")
+
+[node name="CheckBox5" type="CheckBox" parent="CanvasLayer"]
+offset_left = 672.0
+offset_top = 504.0
+offset_right = 792.0
+offset_bottom = 624.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2f2mt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_emq8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_foigb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4mip3")
+button_group = SubResource("ButtonGroup_lru1b")
+icon = SubResource("CanvasTexture_u4vqm")
+alignment = 1
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox5"]
+offset_left = 6.5
+offset_top = 6.0
+offset_right = 116.5
+offset_bottom = 116.0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_x4sgg")
+
+[node name="CheckBox6" type="CheckBox" parent="CanvasLayer"]
+offset_left = 812.0
+offset_top = 503.0
+offset_right = 932.0
+offset_bottom = 623.0
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(0.678431, 0.678431, 0.678431, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2f2mt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_emq8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_foigb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4mip3")
+button_group = SubResource("ButtonGroup_lru1b")
+icon = SubResource("CanvasTexture_u4vqm")
+alignment = 1
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox6"]
+offset_left = 6.5
+offset_top = 6.0
+offset_right = 116.5
+offset_bottom = 116.0
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("6_4vmn8")
