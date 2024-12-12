@@ -1077,7 +1077,7 @@ offset_bottom = 100.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("11_mci63")
 theme_override_font_sizes/font_size = 30
-text = "\"BOB\" THE BUILDER"
+text = "'BOB' THE BUILDER"
 vertical_alignment = 1
 
 [node name="Button" type="Button" parent="CanvasLayer"]
@@ -1092,21 +1092,22 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_uwon5")
 text = "BUY"
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
+offset_left = 239.0
 offset_top = 528.0
-offset_right = 1152.0
-offset_bottom = 555.0
+offset_right = 576.0
+offset_bottom = 567.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_odf7g")
 theme_override_font_sizes/font_size = 16
-text = "Select Object to Build"
-horizontal_alignment = 1
+text = "\"Can we build it? Yes we can!\"
+                         — Bob"
 vertical_alignment = 1
 
 [node name="Button2" type="Button" parent="CanvasLayer"]
-offset_left = 983.0
-offset_top = 60.0
-offset_right = 1029.0
-offset_bottom = 101.0
+offset_left = 975.0
+offset_top = 68.0
+offset_right = 1021.0
+offset_bottom = 109.0
 theme_override_fonts/font = ExtResource("11_mci63")
 theme_override_font_sizes/font_size = 22
 theme_override_styles/focus = SubResource("StyleBoxEmpty_g3hmt")
