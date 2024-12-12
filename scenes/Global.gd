@@ -3,6 +3,7 @@ extends Node
 var water_array = []
 var ground_water: float = 66
 var water_currency: int = 5000
+var is_raining: bool = false
 const CURRENCY_THRESHOLD = 5000
 
 var current_tile = null
