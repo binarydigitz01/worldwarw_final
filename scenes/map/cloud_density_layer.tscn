@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmgnenwu47f11"]
+
+[ext_resource type="Texture2D" uid="uid://bee5k8gk0gaog" path="res://assets/pictures/cloud.png" id="1_56m17"]
+[ext_resource type="Script" path="res://scenes/game/cloud_density_layer.gd" id="2_oby8q"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u6nch"]
+texture = ExtResource("1_56m17")
+texture_region_size = Vector2i(64, 64)
+1:0/0 = 0
+2:0/0 = 0
+0:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_stett"]
+tile_shape = 3
+tile_layout = 5
+tile_offset_axis = 1
+tile_size = Vector2i(64, 32)
+custom_data_layer_0/name = "cloud_density"
+custom_data_layer_0/type = 3
+sources/0 = SubResource("TileSetAtlasSource_u6nch")
+
+[node name="CloudDensityLayer" type="TileMapLayer"]
+z_index = 5
+tile_set = SubResource("TileSet_stett")
+script = ExtResource("2_oby8q")
+
+[node name="day_cycle" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="day_cycle" to="." method="_on_day_cycle_timeout"]
