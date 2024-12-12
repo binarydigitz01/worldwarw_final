@@ -25,6 +25,9 @@ Global="*res://scenes/Global.gd"
 PipeLayer=""
 tilemap=""
 BuildingLayer=""
+groundwatertp=""
+water_currency=""
+water_redstone_timer=""
 
 [input]
 

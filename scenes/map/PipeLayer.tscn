@@ -34,7 +34,7 @@ tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 2, 0, 11, 0, 0, 0, 0, 0, 0
 tile_set = SubResource("TileSet_rv45c")
 script = ExtResource("2_nl5os")
 
-[node name="WaterTimer" type="Timer" parent="."]
+[node name="WaterTimer" type="Timer" parent="." groups=["water_redstone_timer"]]
 wait_time = 0.2
 autostart = true
 

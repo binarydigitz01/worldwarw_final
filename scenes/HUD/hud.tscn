@@ -51,7 +51,7 @@ size_flags_horizontal = 3
 texture = ExtResource("1_umeog")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="Label" type="Label" parent="CanvasLayer" groups=["water_currency"]]
 physics_interpolation_mode = 0
 offset_left = 773.0
 offset_top = 37.0
@@ -65,7 +65,7 @@ theme_override_fonts/font = ExtResource("2_m4ayd")
 theme_override_font_sizes/font_size = 22
 text = "5000"
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer" groups=["groundwatertp"]]
 offset_left = 31.0
 offset_top = 525.0
 offset_right = 431.0

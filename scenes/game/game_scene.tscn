@@ -13,11 +13,12 @@
 [node name="GroundLayer" parent="." instance=ExtResource("1_ibhwn")]
 
 [node name="PipeLayer" parent="." instance=ExtResource("2_qktpy")]
+z_index = 100
 z_as_relative = false
-tile_map_data = PackedByteArray("AAD//wAAAgAOAAAAAAAAAAAAAgANAAAAAAAAAP//AgAPAAAAAAD/////AgAMAAAAAAD///7/AgACAAAAAAAAAAMAAgAAAAAAAAD///3/AgAPAAAAAAD+//3/AgAIAAAAAAD9//3/AgAOAAAAAAD9//7/AgACAAAAAAD9////AgACAAAAAAD9/wAAAgAMAAAAAAD+/wAAAgAPAAAAAAD+/wEAAgAMAAAAAAD//wEAAgANAAAAAAA=")
+tile_map_data = PackedByteArray("AAD//wAAAgAOAAAAAAAAAAAAAgANAAAAAAAAAP//AgAPAAAAAAD/////AgAMAAAAAAD///7/AgACAAAAAAAAAAMAAgAAAAAAAAD///3/AgAPAAAAAAD+//3/AgAIAAAAAAD9//3/AgAPAAAAAAD9//7/AgACAAAAAAD9////AgACAAAAAAD9/wAAAgAMAAAAAAD+/wAAAgAPAAAAAAD+/wEAAgAMAAAAAAD//wEAAgANAAAAAAD8//3/AgAMAAAAAAD8//z/AgACAAAAAAA=")
 
 [node name="BuildingLayer" parent="." instance=ExtResource("3_31ed8")]
-tile_map_data = PackedByteArray("AAD6////AAAAAAAAAAD9//z/AQAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD6////AAAAAAAAAAD9//z/AQAAAAAAAAAAAAIABAAAAAAAAAD8//7/BAAAAAAAAAD9////BAAAAAAAAAD+/wAABAAAAAAAAAD//wAABAAAAAAAAAD+////BAAAAAAAAAD9//7/BAAAAAAAAAA=")
 
 [node name="GCC2D" parent="." instance=ExtResource("1_5l45t")]
 
