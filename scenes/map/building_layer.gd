@@ -55,7 +55,9 @@ func _on_ice_drill_timer_timeout() -> void:
 	var ice_drills = get_used_cells_by_id(3)
 	var i = 0
 	for j in ice_drills:
-		if get_cell_atlas_coords(j) == Vector2i(7,0):
+		var atlas_coords = ground_layer.get_cell_atlas_coords(j)
+		var source_id = ground_layer.get_cell_source_id(j)
+		if ground_layer.get_cell_atlas_coords(j) == Vector2i(7,0):
 			i+=1
 	Global.add_ice_currency(2*i)
 

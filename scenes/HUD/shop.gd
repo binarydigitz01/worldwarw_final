@@ -27,6 +27,9 @@ func _on_button_pressed() -> void:
 	if name == "Ice Depot":
 		Global.current_tile = Vector3(6,0,0)
 		Global.add_ice_currency(-500)
+	if name == "Water Tank":
+		Global.current_tile = Vector3i(4,0,0)
+		Global.add_water_currency(-500)
 	queue_free()
 
 
