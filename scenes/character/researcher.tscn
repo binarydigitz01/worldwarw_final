@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bkk7lvhvxvk8g"]
+[gd_scene load_steps=7 format=3 uid="uid://dj2asjgiewshb"]
 
 [ext_resource type="Script" path="res://scenes/character/researcher.gd" id="1_ija62"]
 [ext_resource type="Texture2D" uid="uid://ccqnbn551ep4h" path="res://assets/character/researcher_sprite.png" id="2_urbog"]
