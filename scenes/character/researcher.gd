@@ -9,7 +9,7 @@ const LAB_SOURCE = 5
 enum BuilderState {GOTO_WORKSHOP, BUILD}
 var state: BuilderState = BuilderState.GOTO_WORKSHOP
 
-const SPEED = 150
+const SPEED = 75
 
 func _ready() -> void:
 	workshop_coords = building_layer.get_used_cells_by_id(LAB_SOURCE)[0]

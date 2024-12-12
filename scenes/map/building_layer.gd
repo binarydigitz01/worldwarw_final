@@ -15,12 +15,14 @@ func _on_drill_timer_timeout() -> void:
 	for t in water_drill_tiles:
 		if Global.water_currency < Global.CURRENCY_THRESHOLD:
 			Global.add_water_currency(WATER_DRILL_RATE)
+			ground_layer.pump_out_water(WATER_DRILL_RATE, t, false, false)
 		else:
 			ground_layer.pump_out_water(WATER_DRILL_RATE, t)
 	var hand_pumps = get_used_cells_by_id(2)
 	for t in hand_pumps:
 		if Global.water_currency < Global.CURRENCY_THRESHOLD:
 			Global.add_water_currency(WATER_DRILL_RATE)
+			ground_layer.pump_out_water(WATER_DRILL_RATE, t,true,false)
 		else:
 			ground_layer.pump_out_water(WATER_DRILL_RATE,t,true)
 
@@ -47,5 +49,7 @@ func _on_water_tank_timer_timeout() -> void:
 				tile_data = get_cell_tile_data(i)
 				tile_data.set_custom_data("water_tank", w_stored)
 
-				
-				
+
+func _on_ice_drill_timer_timeout() -> void:
+	var ice_drills = Global.ICE_THRESHOLD/500
+	Global.add_ice_currency(2*ice_drills)
