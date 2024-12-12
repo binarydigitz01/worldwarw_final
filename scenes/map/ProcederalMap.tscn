@@ -1,8 +1,19 @@
-[gd_scene load_steps=10 format=4 uid="uid://g8bfiaqjj4u2"]
+[gd_scene load_steps=23 format=4 uid="uid://g8bfiaqjj4u2"]
 
+[ext_resource type="Texture2D" uid="uid://oh4ueejd7oqn" path="res://assets/pictures/foresttile.png" id="1_355lw"]
 [ext_resource type="Texture2D" uid="uid://dh1208rr2616t" path="res://assets/pictures/Tilemap.png" id="1_x841l"]
 [ext_resource type="Texture2D" uid="uid://b62s3b363omwh" path="res://assets/pictures/water-levels.png" id="1_xmf0g"]
 [ext_resource type="Script" path="res://scenes/map/Procederal.gd" id="2_poqny"]
+[ext_resource type="Texture2D" uid="uid://dtwe83dfsohos" path="res://assets/pictures/agriculture.png" id="4_6hsyb"]
+[ext_resource type="Texture2D" uid="uid://d324duuw1a7x7" path="res://assets/pictures/grassy.png" id="5_kwxs1"]
+[ext_resource type="Texture2D" uid="uid://d0ikwpasjodkh" path="res://assets/equipment/bigsucc.png" id="6_mvqud"]
+[ext_resource type="Texture2D" uid="uid://dg7ss54n8qs5v" path="res://assets/equipment/midsucc.png" id="7_2b87v"]
+[ext_resource type="Texture2D" uid="uid://cdsb7b3k7cdgl" path="res://assets/equipment/smallsucc.png" id="8_ahruy"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oij60"]
+texture = ExtResource("1_355lw")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ngk5p"]
 texture = ExtResource("1_xmf0g")
@@ -67,6 +78,41 @@ texture_region_size = Vector2i(64, 34)
 3:1/0 = 0
 3:1/0/texture_origin = Vector2i(0, 16)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_anxk0"]
+texture = ExtResource("4_6hsyb")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4u8lx"]
+texture = ExtResource("5_kwxs1")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahjba"]
+texture = ExtResource("5_kwxs1")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dnrgt"]
+texture = ExtResource("6_mvqud")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qj61k"]
+texture = ExtResource("7_2b87v")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2gfmy"]
+texture = ExtResource("8_ahruy")
+texture_region_size = Vector2i(64, 32)
+0:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_rv45c"]
 tile_shape = 3
 tile_layout = 5
@@ -80,6 +126,13 @@ custom_data_layer_1/name = "wl"
 custom_data_layer_1/type = 3
 sources/2 = SubResource("TileSetAtlasSource_ialot")
 sources/1 = SubResource("TileSetAtlasSource_ngk5p")
+sources/0 = SubResource("TileSetAtlasSource_oij60")
+sources/3 = SubResource("TileSetAtlasSource_anxk0")
+sources/4 = SubResource("TileSetAtlasSource_4u8lx")
+sources/5 = SubResource("TileSetAtlasSource_ahjba")
+sources/6 = SubResource("TileSetAtlasSource_dnrgt")
+sources/7 = SubResource("TileSetAtlasSource_qj61k")
+sources/8 = SubResource("TileSetAtlasSource_2gfmy")
 
 [node name="GroundLayer" type="TileMapLayer" groups=["tilemap"]]
 y_sort_enabled = true
