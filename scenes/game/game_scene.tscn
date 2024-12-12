@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://cblngm51faq24"]
+[gd_scene load_steps=9 format=4 uid="uid://cblngm51faq24"]
 
 [ext_resource type="PackedScene" uid="uid://d3yk6jk7yc8qy" path="res://plugins/gesture_camera/GCC2D.tscn" id="1_5l45t"]
 [ext_resource type="PackedScene" uid="uid://g8bfiaqjj4u2" path="res://scenes/map/ProcederalMap.tscn" id="1_ibhwn"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://w5mjfqkbcxt8" path="res://scenes/character/civilian.tscn" id="5_c41sx"]
 [ext_resource type="PackedScene" uid="uid://cyhhxf0kyptux" path="res://scenes/character/builder.tscn" id="6_6bcfd"]
 [ext_resource type="PackedScene" uid="uid://xcm6xugaajk6" path="res://scenes/HUD/hud.tscn" id="7_l6ldm"]
-[ext_resource type="PackedScene" uid="uid://bs5jh3h4b4xy" path="res://scenes/activity_control.tscn" id="9_1soqi"]
 
 [node name="GameScene" type="Node2D"]
 script = ExtResource("1_yr5s5")
@@ -36,14 +35,3 @@ z_index = 25
 position = Vector2(479, 74)
 
 [node name="HUD" parent="." instance=ExtResource("7_l6ldm")]
-
-[node name="Control" parent="." instance=ExtResource("9_1soqi")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = -587.0
-offset_top = -319.0
-offset_right = -587.0
-offset_bottom = -319.0
-grow_horizontal = 1
-grow_vertical = 1
