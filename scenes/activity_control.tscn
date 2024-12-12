@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://kjp6iwcfdd22"]
+[gd_scene load_steps=8 format=3 uid="uid://bs5jh3h4b4xy"]
 
 [ext_resource type="Texture2D" uid="uid://dryyn4dadcgud" path="res://assets/pictures/icons/icon_pause.png" id="1_8kt83"]
+[ext_resource type="Script" path="res://scenes/activity_control.gd" id="1_s7kaw"]
 [ext_resource type="Texture2D" uid="uid://drkioe6lj5wkv" path="res://assets/pictures/icons/icon_bin.png" id="2_7ybd0"]
 [ext_resource type="Texture2D" uid="uid://brx45rxu1axyl" path="res://assets/pictures/icons/icon_play.png" id="3_6e1nj"]
 
@@ -47,6 +48,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_s7kaw")
 
 [node name="Pause-Del" type="HBoxContainer" parent="."]
 layout_mode = 0
@@ -62,6 +64,7 @@ size_flags_horizontal = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_ya6xx")
 
 [node name="pause-icon" type="TextureRect" parent="Pause-Del/Pause"]
+layout_mode = 0
 offset_left = 6.0
 offset_top = 6.0
 offset_right = 46.0
@@ -83,6 +86,7 @@ texture = ExtResource("2_7ybd0")
 expand_mode = 4
 
 [node name="Play-Del" type="HBoxContainer" parent="."]
+layout_mode = 0
 offset_left = 352.0
 offset_top = 72.0
 offset_right = 440.0
@@ -95,6 +99,7 @@ size_flags_horizontal = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_7y8b3")
 
 [node name="play-icon" type="TextureRect" parent="Play-Del/Play"]
+layout_mode = 0
 offset_left = 6.0
 offset_top = 6.0
 offset_right = 46.0
@@ -114,3 +119,5 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_7ybd0")
 expand_mode = 4
+
+[connection signal="pressed" from="Pause-Del/Pause" to="." method="_on_pause_pressed"]

@@ -10,9 +10,15 @@ const WATER_TANK_LIMIT = 100
 func _ready() -> void:
 	water_redstone_timer.timeout.connect(_on_water_tank_timer_timeout)
 
+func is_tile_enabled(coords: Vector2i):
+	#return get_cell_tile_data(coords).get_custom_data("is_enabled")
+	return true
+
 func _on_drill_timer_timeout() -> void:
 	var water_drill_tiles = get_used_cells_by_id(WATER_DRILL_SOURCE)
 	for t in water_drill_tiles:
+		if not is_tile_enabled(t):
+			continue
 		if Global.water_currency < Global.CURRENCY_THRESHOLD:
 			Global.add_water_currency(WATER_DRILL_RATE)
 			ground_layer.pump_out_water(WATER_DRILL_RATE, t, false, false)
@@ -29,6 +35,8 @@ func _on_drill_timer_timeout() -> void:
 func _on_water_tank_timer_timeout() -> void:
 	var water_tanks = get_used_cells_by_id(WATER_TANK_SOURCE)
 	for i in water_tanks:
+		if not is_tile_enabled(i):
+			continue
 		var tile_data = get_cell_tile_data(i)
 		if tile_data.get_custom_data("water_tank") == WATER_TANK_LIMIT:
 			continue
@@ -57,12 +65,16 @@ func _on_ice_drill_timer_timeout() -> void:
 	for j in ice_drills:
 		var atlas_coords = ground_layer.get_cell_atlas_coords(j)
 		var source_id = ground_layer.get_cell_source_id(j)
-		if ground_layer.get_cell_atlas_coords(j) == Vector2i(7,0):
+		if ground_layer.get_cell_atlas_coords(j) == Vector2i(7,0) and is_tile_enabled(j):
 			i+=1
 	Global.add_ice_currency(2*i)
 
 
 func _on_condenser_timer_timeout() -> void:
-	var condensors = len(get_used_cells_by_id(8))
-	Global.add_water_currency(5*condensors)
-	Global.add_ice_currency(-condensors)
+	var condensors = get_used_cells_by_id(8)
+	var count = 0
+	for i in condensors:
+		if is_tile_enabled(i):
+			count+=1
+	Global.add_water_currency(5*count)
+	Global.add_ice_currency(-count)

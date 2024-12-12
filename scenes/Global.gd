@@ -8,6 +8,9 @@ const CURRENCY_THRESHOLD = 10000
 
 var current_tile = null
 
+var pause_mode = false
+var play_mode = false
+
 var ice = 500
 var ICE_THRESHOLD = 500
 

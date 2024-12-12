@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://e8gsvwh8c6ea"]
+[gd_scene load_steps=13 format=3 uid="uid://4sao6yt1p0gw"]
 
 [ext_resource type="Texture2D" uid="uid://dixhct20fa7cl" path="res://assets/equipment/individual/pipe1.png" id="1_vaiar"]
 [ext_resource type="Texture2D" uid="uid://bkyraukei4nl4" path="res://assets/equipment/individual/pipe2.png" id="2_copan"]
@@ -96,6 +96,7 @@ icon_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox2"]
+layout_mode = 0
 offset_left = 6.5
 offset_top = 6.0
 offset_right = 116.5
@@ -121,6 +122,7 @@ icon_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox3"]
+layout_mode = 0
 offset_left = 6.5
 offset_top = 6.0
 offset_right = 116.5
@@ -146,6 +148,7 @@ icon_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox4"]
+layout_mode = 0
 offset_left = 6.5
 offset_top = 6.0
 offset_right = 116.5
@@ -171,6 +174,7 @@ icon_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox5"]
+layout_mode = 0
 offset_left = 6.5
 offset_top = 6.0
 offset_right = 116.5
@@ -196,6 +200,7 @@ icon_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/CheckBox6"]
+layout_mode = 0
 offset_left = 6.5
 offset_top = 6.0
 offset_right = 116.5

@@ -18,6 +18,7 @@ texture_region_size = Vector2i(64, 32)
 0:0/animation_frame_1/duration = 0.2
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8.875, -11.125, -8.875, 9.125, 7.375, 9.375, 7.375, -11.125)
+0:0/0/custom_data_1 = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_svysn"]
 texture = ExtResource("2_ipitc")
@@ -26,6 +27,7 @@ texture_region_size = Vector2i(64, 64)
 0:0/animation_frame_0/duration = 0.2
 0:0/animation_frame_1/duration = 0.2
 0:0/0 = 0
+0:0/0/custom_data_1 = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v0ul5"]
 texture = ExtResource("2_2085o")
@@ -45,6 +47,7 @@ texture_region_size = Vector2i(64, 64)
 0:0/animation_frame_11/duration = 0.2
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, -16, 16, 16, 16, 16, -16)
+0:0/0/custom_data_1 = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n5el0"]
 texture = ExtResource("3_7ox3q")
@@ -54,11 +57,13 @@ texture_region_size = Vector2i(64, 32)
 0:0/animation_frame_1/duration = 0.2
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.5, -12.5, -11.25, 9.5, 9, 8.75, 6.25, -14)
+0:0/0/custom_data_1 = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ysojt"]
 texture = ExtResource("5_i0d4k")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
+0:0/0/custom_data_1 = true
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -71,6 +76,7 @@ texture_region_size = Vector2i(64, 64)
 0:0/animation_frame_1/duration = 0.21
 0:0/animation_frame_2/duration = 0.2
 0:0/0 = 0
+0:0/0/custom_data_1 = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ebn8d"]
 texture = ExtResource("7_0y0co")
@@ -79,6 +85,7 @@ texture_region_size = Vector2i(64, 64)
 0:0/animation_frame_0/duration = 0.2
 0:0/animation_frame_1/duration = 0.2
 0:0/0 = 0
+0:0/0/custom_data_1 = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2t65c"]
 texture = ExtResource("8_hmvw2")
@@ -87,6 +94,7 @@ texture_region_size = Vector2i(64, 64)
 0:0/animation_frame_0/duration = 0.2
 0:0/animation_frame_1/duration = 1.0
 0:0/0 = 0
+0:0/0/custom_data_1 = true
 
 [sub_resource type="TileSet" id="TileSet_vy1fe"]
 tile_shape = 3
@@ -94,8 +102,11 @@ tile_layout = 5
 tile_offset_axis = 1
 tile_size = Vector2i(64, 32)
 physics_layer_0/collision_layer = 1
+navigation_layer_0/layers = 1
 custom_data_layer_0/name = "water_tank"
 custom_data_layer_0/type = 2
+custom_data_layer_1/name = "is__enabled"
+custom_data_layer_1/type = 1
 sources/2 = SubResource("TileSetAtlasSource_v0ul5")
 sources/3 = SubResource("TileSetAtlasSource_n5el0")
 sources/1 = SubResource("TileSetAtlasSource_svysn")
