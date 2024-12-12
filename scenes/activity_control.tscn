@@ -1,0 +1,116 @@
+[gd_scene load_steps=7 format=3 uid="uid://kjp6iwcfdd22"]
+
+[ext_resource type="Texture2D" uid="uid://dryyn4dadcgud" path="res://assets/pictures/icons/icon_pause.png" id="1_8kt83"]
+[ext_resource type="Texture2D" uid="uid://drkioe6lj5wkv" path="res://assets/pictures/icons/icon_bin.png" id="2_7ybd0"]
+[ext_resource type="Texture2D" uid="uid://brx45rxu1axyl" path="res://assets/pictures/icons/icon_play.png" id="3_6e1nj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ya6xx"]
+bg_color = Color(0.721569, 0.545098, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.528082, 0.39558, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j1m6m"]
+bg_color = Color(1, 0.262562, 0.239504, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.924706, 0, 0.0948974, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y8b3"]
+bg_color = Color(0.314193, 0.67529, 3.85046e-07, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.208728, 0.466778, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Pause-Del" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 72.0
+offset_right = 184.0
+offset_bottom = 112.0
+theme_override_constants/separation = 8
+
+[node name="Pause" type="Button" parent="Pause-Del"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_ya6xx")
+
+[node name="pause-icon" type="TextureRect" parent="Pause-Del/Pause"]
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 46.0
+offset_bottom = 46.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_8kt83")
+expand_mode = 2
+
+[node name="Delete" type="Button" parent="Pause-Del"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_j1m6m")
+
+[node name="del-icon" type="TextureRect" parent="Pause-Del/Delete"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_7ybd0")
+expand_mode = 4
+
+[node name="Play-Del" type="HBoxContainer" parent="."]
+offset_left = 352.0
+offset_top = 72.0
+offset_right = 440.0
+offset_bottom = 112.0
+theme_override_constants/separation = 8
+
+[node name="Play" type="Button" parent="Play-Del"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_7y8b3")
+
+[node name="play-icon" type="TextureRect" parent="Play-Del/Play"]
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 46.0
+offset_bottom = 46.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_6e1nj")
+expand_mode = 2
+
+[node name="Delete" type="Button" parent="Play-Del"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_j1m6m")
+
+[node name="del-icon" type="TextureRect" parent="Play-Del/Delete"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_7ybd0")
+expand_mode = 4
