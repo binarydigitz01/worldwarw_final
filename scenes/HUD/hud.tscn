@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://xcm6xugaajk6"]
+[gd_scene load_steps=12 format=3 uid="uid://xcm6xugaajk6"]
 
 [ext_resource type="Texture2D" uid="uid://cg0cndhf4e3gc" path="res://assets/pictures/icons/icon_pollution.png" id="1_of4q0"]
 [ext_resource type="Texture2D" uid="uid://b1lcj17qudw40" path="res://assets/pictures/icons/icon_water_drop.png" id="1_umeog"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cm0gmvccblsmo" path="res://assets/pictures/icons/settings-pressed.png" id="7_hk8vn"]
 [ext_resource type="Texture2D" uid="uid://bsgr7y1fcx70q" path="res://assets/pictures/icons/shopping-normal.png" id="8_j0xs6"]
 [ext_resource type="Texture2D" uid="uid://dtqk4oyo4jaf3" path="res://assets/pictures/icons/shopping-pressed.png" id="9_gj48v"]
+[ext_resource type="Script" path="res://scenes/HUD/settings_2.gd" id="11_brsd8"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -71,6 +72,7 @@ text = "5000"
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Label"]
 physics_interpolation_mode = 0
+layout_mode = 0
 offset_left = 134.0
 offset_top = -6.0
 offset_right = 164.0
@@ -81,6 +83,7 @@ expand_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/Label"]
 physics_interpolation_mode = 0
+layout_mode = 0
 offset_left = 168.0
 offset_top = -1.0
 offset_right = 245.0
@@ -94,7 +97,7 @@ theme_override_font_sizes/font_size = 22
 text = "500
 "
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer" groups=["groundwatertp"]]
 offset_left = 31.0
 offset_top = 525.0
 offset_right = 431.0
@@ -150,3 +153,6 @@ offset_bottom = 628.0
 texture_normal = ExtResource("8_j0xs6")
 texture_pressed = ExtResource("9_gj48v")
 stretch_mode = 5
+script = ExtResource("11_brsd8")
+
+[connection signal="pressed" from="CanvasLayer/Settings2" to="CanvasLayer/Settings2" method="_on_pressed"]

@@ -1,9 +1,11 @@
 extends Node
 
 var water_array = []
-var ground_water: float = 100
+var ground_water: float = 66
 var water_currency: int = 5000
 const CURRENCY_THRESHOLD = 5000
+
+var current_tile = null
 
 func update_groundwater(gw: float):
 	var tp : TextureProgressBar = get_tree().get_first_node_in_group("groundwatertp")

@@ -43,15 +43,26 @@ func water_group(pos: Vector2i):
 	assert(false, "No water tile over here!")
 
 func pump_out_water(quantity: int, pos: Vector2i,ground_water = false):
+	if ground_water:
+		var data = get_cell_tile_data(pos)
+		var rect_coords = map_to_local(pos)
+		rect_coords.x += 32
+		rect_coords.y += 16 
+		rect_coords = pipe_layer.local_to_map(rect_coords)
+		
+		var water_quality = data.get_custom_data("wq")
+
+		Water.new(quantity, rect_coords, water_quality)
+		Global.update_groundwater(Global.ground_water-1)
+		return
+				
 	var wg = water_group(pos)
 	var total_tiles = len(wg)
 	var decrease = quantity * WATER_LITRE_TO_LEVEL / total_tiles
 	var quality_decrease = WATER_QUALITY_DECREASE / total_tiles
 	var data = get_cell_tile_data(pos)
 	var water_level = data.get_custom_data("wl") - decrease
-	print(water_level)
 	var water_quality = data.get_custom_data("wq") - quality_decrease
-	print(water_quality)
 	for i in wg:
 		get_cell_tile_data(i).set_custom_data("wl", water_level)
 		get_cell_tile_data(i).set_custom_data("wq",water_quality)
@@ -65,10 +76,7 @@ func pump_out_water(quantity: int, pos: Vector2i,ground_water = false):
 	rect_coords.y += 16 
 	rect_coords = pipe_layer.local_to_map(rect_coords)
 
-	Water.new(quantity, rect_coords, water_quality)
-	if ground_water:
-		Global.update_groundwater(Global.ground_water-1)
-	
+	Water.new(quantity, rect_coords, water_quality)	
 	
 	
 	

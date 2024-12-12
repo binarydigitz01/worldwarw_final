@@ -5,7 +5,6 @@ func _on_water_timer_timeout() -> void:
 	for water in water_nodes:
 		water = water as Water
 		var current_coords = water.travelled[-1]
-		print("Water coords: ", current_coords)
 		var current_atlas = get_cell_atlas_coords(current_coords)
 		if current_atlas.x==2:
 			var n1_cell=get_cell_atlas_coords(Vector2i(current_coords.x,current_coords.y+1))

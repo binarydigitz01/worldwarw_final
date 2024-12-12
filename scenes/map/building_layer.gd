@@ -31,11 +31,12 @@ func _on_water_tank_timer_timeout() -> void:
 		if tile_data.get_custom_data("water_tank") == WATER_TANK_LIMIT:
 			continue
 		for j in range(0,len(Global.water_array)):
+			if len(Global.water_array) <= j:
+				break
 			if i == Global.water_array[j].travelled[-1]:
 				var w = Global.water_array[j] as Water
 				Global.water_array.remove_at(j)
 				var w_stored = tile_data.get_custom_data("water_tank")
-				print(w_stored)
 				w_stored = clamp(w_stored + w.quantity,0,WATER_TANK_LIMIT)
 				if w_stored < WATER_TANK_LIMIT/3:
 					set_cell(i, WATER_TANK_SOURCE,Vector2i(0,0))

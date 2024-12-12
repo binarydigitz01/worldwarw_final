@@ -1,6 +1,7 @@
-[gd_scene load_steps=26 format=3 uid="uid://b0mxet50fnfkr"]
+[gd_scene load_steps=27 format=3 uid="uid://ctoojnam3pyhc"]
 
 [ext_resource type="Texture2D" uid="uid://dccwsj4mcdlrk" path="res://assets/equipment/individual/water-drill.png" id="1_276u5"]
+[ext_resource type="Script" path="res://scenes/HUD/shop.gd" id="1_cpjto"]
 [ext_resource type="FontFile" uid="uid://b2sqmunikjnkm" path="res://assets/fonts/dogicapixel.ttf" id="2_odf7g"]
 [ext_resource type="Texture2D" uid="uid://bjc14t38tq686" path="res://assets/equipment/individual/icedrill_sprite.png" id="3_ppdkg"]
 [ext_resource type="Texture2D" uid="uid://b1lcj17qudw40" path="res://assets/pictures/icons/icon_water_drop.png" id="3_v8lk2"]
@@ -84,6 +85,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cpjto")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -145,6 +147,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -175,6 +178,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -183,6 +187,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox2" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 258.324
 offset_top = 103.022
 offset_right = 558.324
@@ -217,6 +222,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox2"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -238,6 +244,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -246,6 +253,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox2"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -254,6 +262,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox3" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 474.809
 offset_top = 103.022
 offset_right = 774.809
@@ -288,6 +297,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox3"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -309,6 +319,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -317,6 +328,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox3"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -325,6 +337,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox4" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 691.293
 offset_top = 103.022
 offset_right = 991.293
@@ -359,6 +372,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox4"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -380,6 +394,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -388,6 +403,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox4"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -396,6 +412,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox5" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 907.777
 offset_top = 103.022
 offset_right = 1207.78
@@ -430,6 +447,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox5"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -451,6 +469,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -459,6 +478,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox5"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -467,6 +487,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox6" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 39.6804
 offset_top = 340.397
 offset_right = 339.68
@@ -501,6 +522,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox6"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -522,6 +544,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -530,6 +553,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox6"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -538,6 +562,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox7" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 258.324
 offset_top = 342.557
 offset_right = 558.324
@@ -572,6 +597,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox7"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -593,6 +619,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -601,6 +628,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox7"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -609,6 +637,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox8" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 474.809
 offset_top = 342.557
 offset_right = 774.809
@@ -643,6 +672,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox8"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -664,6 +694,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -672,6 +703,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox8"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -680,6 +712,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox9" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 691.293
 offset_top = 342.557
 offset_right = 991.293
@@ -714,6 +747,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox9"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -735,6 +769,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -743,6 +778,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox9"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -751,6 +787,7 @@ texture = ExtResource("4_802h2")
 expand_mode = 2
 
 [node name="CheckBox10" type="CheckBox" parent="CanvasLayer/Panel/Panel"]
+layout_mode = 0
 offset_left = 907.777
 offset_top = 342.557
 offset_right = 1207.78
@@ -785,6 +822,7 @@ expand_icon = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox10"]
 clip_contents = true
+layout_mode = 0
 offset_left = 25.0
 offset_right = 65.0
 offset_bottom = 40.0
@@ -807,6 +845,7 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 254.205
 offset_right = 49.9677
@@ -815,6 +854,7 @@ texture = ExtResource("3_v8lk2")
 expand_mode = 2
 
 [node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Panel/Panel/CheckBox10"]
+layout_mode = 0
 offset_left = 19.9677
 offset_top = 291.106
 offset_right = 49.9677
@@ -848,3 +888,5 @@ theme_override_font_sizes/font_size = 22
 theme_override_styles/focus = SubResource("StyleBoxEmpty_g3hmt")
 theme_override_styles/normal = SubResource("StyleBoxFlat_uwon5")
 text = "BUY"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
