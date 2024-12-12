@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm71g63gxd2h0"]
+
+[ext_resource type="Script" path="res://scenes/game/Rain.gd" id="1_ocygo"]
+
+[node name="Rain Filter" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Rain" type="CPUParticles2D" parent="CanvasLayer"]
+visible = false
+position = Vector2(499, -1)
+amount = 500
+randomness = 0.04
+lifetime_randomness = 0.2
+emission_shape = 3
+emission_rect_extents = Vector2(200, 1)
+gravity = Vector2(100, 980)
+scale_amount_max = 13.0
+color = Color(0, 0.639216, 1, 1)
+script = ExtResource("1_ocygo")
+
+[node name="rain_tick" type="Timer" parent="CanvasLayer/Rain"]
+autostart = true
+
+[connection signal="timeout" from="CanvasLayer/Rain/rain_tick" to="CanvasLayer/Rain" method="_on_rain_tick_timeout"]

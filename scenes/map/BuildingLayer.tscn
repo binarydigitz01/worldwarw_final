@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://pggmy2xqcf5i"]
+[gd_scene load_steps=21 format=3 uid="uid://pggmy2xqcf5i"]
 
 [ext_resource type="Texture2D" uid="uid://csyqkne5afvuy" path="res://assets/equipment/waterdrill_sprite.png" id="1_adi78"]
 [ext_resource type="Texture2D" uid="uid://cupypbgak0wg1" path="res://assets/equipment/waterpump_sprite.png" id="2_2085o"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://l34r3cmyokbk" path="res://assets/buildings/lab.png" id="6_atwo3"]
 [ext_resource type="Texture2D" uid="uid://3j2jipyg33wi" path="res://assets/buildings/icedepot.png" id="7_0y0co"]
 [ext_resource type="Texture2D" uid="uid://cemojgcvspyum" path="res://assets/buildings/condenser.png" id="8_hmvw2"]
+[ext_resource type="Texture2D" uid="uid://0672vunypt36" path="res://assets/buildings/waterharvester.png" id="8_rcdoj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vbgjg"]
 texture = ExtResource("1_adi78")
@@ -80,6 +81,33 @@ texture_region_size = Vector2i(64, 64)
 0:0/animation_frame_1/duration = 0.2
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rc1eu"]
+texture = ExtResource("8_rcdoj")
+texture_region_size = Vector2i(64, 64)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+0:0/animation_columns = 10
+0:0/animation_speed = 0.2
+0:0/animation_frame_0/duration = 0.2
+0:0/animation_frame_1/duration = 0.2
+0:0/animation_frame_2/duration = 0.2
+0:0/animation_frame_3/duration = 0.2
+0:0/animation_frame_4/duration = 0.2
+0:0/animation_frame_5/duration = 0.2
+0:0/animation_frame_6/duration = 0.2
+0:0/animation_frame_7/duration = 0.2
+0:0/animation_frame_8/duration = 0.2
+0:0/animation_frame_9/duration = 0.2
+0:0/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2t65c"]
 texture = ExtResource("8_hmvw2")
 texture_region_size = Vector2i(64, 64)
@@ -104,9 +132,10 @@ sources/5 = SubResource("TileSetAtlasSource_lgik8")
 sources/6 = SubResource("TileSetAtlasSource_ebn8d")
 sources/0 = SubResource("TileSetAtlasSource_vbgjg")
 sources/8 = SubResource("TileSetAtlasSource_2t65c")
+sources/7 = SubResource("TileSetAtlasSource_rc1eu")
 
 [node name="BuildingLayer" type="TileMapLayer" groups=["BuildingLayer"]]
-tile_map_data = PackedByteArray(0, 0, 253, 255, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 5, 0, 0, 0, 0, 0, 0, 0)
+tile_map_data = PackedByteArray(0, 0, 253, 255, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 5, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 7, 0, 0, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_vy1fe")
 script = ExtResource("4_x70nq")
 
@@ -118,6 +147,9 @@ autostart = true
 
 [node name="condenser_timer" type="Timer" parent="."]
 
+[node name="water_harvester_timer" type="Timer" parent="."]
+
 [connection signal="timeout" from="drill_timer" to="." method="_on_drill_timer_timeout"]
 [connection signal="timeout" from="ice_drill_timer" to="." method="_on_ice_drill_timer_timeout"]
 [connection signal="timeout" from="condenser_timer" to="." method="_on_condenser_timer_timeout"]
+[connection signal="timeout" from="water_harvester_timer" to="." method="_on_water_harvester_timer_timeout"]

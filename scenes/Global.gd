@@ -3,13 +3,19 @@ extends Node
 var water_array = []
 var ground_water: float = 66
 var water_currency: int = 10000
-var is_raining: bool = false
+var is_raining: bool = true
 const CURRENCY_THRESHOLD = 10000
 
 var current_tile = null
 
 var ice = 500
 var ICE_THRESHOLD = 500
+
+func getRaining() -> bool:
+	return is_raining
+	
+func setRaining(b: bool) -> void:
+	is_raining=b
 
 func update_groundwater(gw: float):
 	var tp : TextureProgressBar = get_tree().get_first_node_in_group("groundwatertp")

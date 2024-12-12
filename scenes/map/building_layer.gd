@@ -7,6 +7,7 @@ extends TileMapLayer
 const WATER_DRILL_SOURCE = 0
 const WATER_TANK_SOURCE = 4
 const WATER_TANK_LIMIT = 100
+const WATER_HARVESTER_SOURCE = 7
 func _ready() -> void:
 	water_redstone_timer.timeout.connect(_on_water_tank_timer_timeout)
 
@@ -66,3 +67,10 @@ func _on_condenser_timer_timeout() -> void:
 	var condensors = len(get_used_cells_by_id(8))
 	Global.add_water_currency(5*condensors)
 	Global.add_ice_currency(-condensors)
+
+
+func _on_water_harvester_timer_timeout() -> void:
+	var water_harvesters = get_used_cells_by_id(WATER_HARVESTER_SOURCE)
+	for t in water_harvesters:
+		if Global.getRaining():
+			Global.add_water_currency(20)
