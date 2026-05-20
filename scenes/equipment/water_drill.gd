@@ -1,4 +1,5 @@
 extends Node2D
+c
 
 @onready var sprite = $AnimatedSprite2D
 var map : TileMapLayer
